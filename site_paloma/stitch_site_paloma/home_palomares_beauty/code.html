@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Palomares Beauty | A Arte da Beleza Natural</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-secondary-fixed-variant": "#554336",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#4f4444",
+                    "carrara-gray": "#E5E5E5",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#2a1617",
+                    "secondary-fixed-dim": "#dbc2b0",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f5f3ee",
+                    "luxury-nude": "#CAB2A1",
+                    "surface-bright": "#fbf9f4",
+                    "surface-tint": "#725858",
+                    "on-surface": "#1b1c19",
+                    "surface": "#fbf9f4",
+                    "surface-variant": "#e4e2dd",
+                    "primary-fixed-dim": "#e1bebe",
+                    "secondary-container": "#f8decb",
+                    "on-primary-container": "#c8a7a6",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#832334",
+                    "on-secondary-fixed": "#26190e",
+                    "tertiary-fixed": "#ffdadb",
+                    "off-white": "#FDFCFB",
+                    "tertiary-container": "#7c1e2f",
+                    "tertiary": "#5d041b",
+                    "on-tertiary-fixed": "#40000f",
+                    "outline-variant": "#d3c3c2",
+                    "inverse-primary": "#e1bebe",
+                    "on-tertiary-container": "#ff8d98",
+                    "tertiary-fixed-dim": "#ffb2b8",
+                    "on-tertiary": "#ffffff",
+                    "primary": "#3c2627",
+                    "inverse-surface": "#30312e",
+                    "surface-container-highest": "#e4e2dd",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-background": "#1b1c19",
+                    "on-secondary-container": "#746152",
+                    "primary-fixed": "#fedad9",
+                    "on-error": "#ffffff",
+                    "deep-burgundy": "#591E27",
+                    "surface-dim": "#dbdad5",
+                    "secondary": "#6e5b4d",
+                    "surface-container": "#f0eee9",
+                    "outline": "#817474",
+                    "surface-container-high": "#eae8e3",
+                    "truffle-brown": "#543C3C",
+                    "on-primary-fixed-variant": "#594141",
+                    "secondary-fixed": "#f8decb",
+                    "champagne-gold": "#D4AF37",
+                    "background": "#fbf9f4",
+                    "primary-container": "#543c3c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "80px",
+                    "margin-mobile": "24px",
+                    "unit": "8px",
+                    "section-gap": "120px",
+                    "gutter": "32px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "body-md": ["Montserrat"],
+                    "label-caps": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "headline-lg": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "300"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "0.03em", "fontWeight": "400"}],
+                    "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { @apply bg-background text-on-surface; overflow-x: hidden; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24; }
+        .hero-gradient { background: linear-gradient(to right, rgba(251, 249, 244, 0.9), rgba(251, 249, 244, 0.4)); }
+        .btn-gradient { background: linear-gradient(135deg, #543c3c 0%, #cab2a1 100%); }
+        .mask-image-editorial { mask-image: linear-gradient(to bottom, black 80%, transparent 100%); }
+        .scroll-reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+        .scroll-reveal.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 md:px-[80px] py-6 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-carrara-gray/20 shadow-sm opacity-90 max-w-[1440px] mx-auto left-1/2 -translate-x-1/2">
+<a class="font-headline-md text-headline-md tracking-widest text-truffle-brown dark:text-luxury-nude uppercase" href="#">Palomares Beauty</a>
+<nav class="hidden md:flex gap-gutter">
+<a class="font-label-caps text-label-caps text-truffle-brown border-b border-champagne-gold pb-1" href="#">Procedimentos</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-truffle-brown transition-colors" href="#">Clínica</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-truffle-brown transition-colors" href="#">Dermatologia</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-truffle-brown transition-colors" href="#">Tecnologia</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-truffle-brown transition-colors" href="#">Unidades</a>
+</nav>
+<button class="hidden md:block px-6 py-3 bg-truffle-brown text-white font-label-caps text-label-caps hover:opacity-80 transition-all active:scale-95">AGENDAR CONSULTA</button>
+<button class="md:hidden text-truffle-brown"><span class="material-symbols-outlined">menu</span></button>
+</header>
+<main class="pt-[92px]">
+<!-- Hero Section -->
+<section class="relative h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Palomares Beauty Hero" class="w-full h-full object-cover object-center" data-alt="A high-end, minimalist clinical space with soft, cinematic lighting illuminating hones marble surfaces and warm wooden accents. A woman with radiant, flawless skin is seen in profile, capturing a sense of calm, quiet luxury. The overall aesthetic is ethereal and sophisticated, using a palette of soft nudes, creams, and deep truffle browns to convey professional beauty care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlqL5wcYhN5-aUJkwGFuJfL23mRUYnWAiAiT9MfHJXxnWZwSpZCRxeQxskprFgpkTbdPbK3XJDEnKEwewl109PSiFXlN7C1mFO7g3FWb1vwirGhJvL9CgOLGBkKuWSKeswsFzJ1nLhZS7fgjFSK6WmaDULuGOf5-PpUqrur71RAG0n9aRC8YY5-Us9795zXj5GJm7gZYpeX3uxPHWmnHpYEG_xyOKr_xwAYtpv43pUeVaqckbsULQ8PqHoO9kHvBp9XWhwzt2Locvb"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop z-10">
+<div class="max-w-2xl">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-truffle-brown mb-6">A Arte da <br/><span class="italic font-normal">Beleza Natural</span></h1>
+<p class="font-body-lg text-body-lg text-on-secondary-container mb-10 max-w-lg">Onde a ciência dermatológica encontra o cuidado exclusivo. Tratamentos personalizados para revelar sua melhor versão com naturalidade e sofisticação.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="btn-gradient text-white px-8 py-4 font-label-caps text-label-caps shadow-lg hover:shadow-xl transition-all active:scale-95">CONHECER PROCEDIMENTOS</button>
+<button class="border border-champagne-gold text-truffle-brown px-8 py-4 font-label-caps text-label-caps hover:bg-surface-container-low transition-all">MARCAR CONSULTA</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Filosofia Section -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 items-center gap-gutter">
+<div class="relative scroll-reveal">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-luxury-nude/10 rounded-full blur-3xl"></div>
+<img alt="Clinical Excellence" class="w-full h-[600px] object-cover rounded-lg shadow-sm" data-alt="Close-up of a professional dermatological consultation where a doctor in a clean white coat is gently examining a patient's skin with a handheld lens. The lighting is soft and bright, highlighting a clinical yet warm environment. The aesthetic is ultra-modern and clean, focusing on the precision and science behind beauty treatments." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCced1XDFc1xy4AkJlkNCXeWEoor2BdgzIG5O3F8_jsR2KPOI-ng-xMTtvVJq0EPupLOUphI_E6LkBISjLFBMfIhBXbxkNpIpfeaTMluXP2KpfGW2h2OuBF5zIvYMwD-iPQ_qwSZm-sjVPCu-3VgXrhN0-N9SwLI-tZ3O_0D1trE8A1uzHNk4UaJM_FVs7Gca_KaDc0wKrxRIyFc_-RK_CXKHZ0jAg6S0XqMgVMBuMaeZswM4dObR6TBwJ8ytua2IcbHim_dGHfd4ml"/>
+</div>
+<div class="scroll-reveal">
+<span class="font-label-caps text-label-caps text-luxury-nude mb-4 block">FILOSOFIA</span>
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown mb-8 leading-tight">Ciência e Estética em <br/>Perfeita Harmonia</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Na Palomares Beauty, acreditamos que a verdadeira beleza reside na harmonia. Nossa abordagem "Quiet Luxury" afasta-se de resultados artificiais para focar na regeneração celular e no refinamento dos traços naturais.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Sob a curadoria de especialistas em dermatologia avançada, utilizamos o que há de mais moderno na tecnologia mundial para entregar resultados duradouros e uma experiência de cuidado incomparável.</p>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-truffle-brown border-b border-truffle-brown pb-1 hover:text-luxury-nude hover:border-luxury-nude transition-all" href="#">SAIBA MAIS SOBRE A CLÍNICA <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</section>
+<!-- Diferenciais Section -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16 scroll-reveal">
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown">O Padrão Palomares</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Diferencial 1 -->
+<div class="bg-off-white p-12 text-center scroll-reveal hover:translate-y-[-8px] transition-transform duration-500 shadow-[0_40px_40px_-15px_rgba(84,60,60,0.04)]">
+<span class="material-symbols-outlined text-4xl text-luxury-nude mb-6 block" style="font-variation-settings: 'wght' 200;">diversity_1</span>
+<h3 class="font-headline-md text-headline-md text-truffle-brown mb-4">Atendimento Humanizado</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Cada paciente é único. Nossos protocolos são desenhados individualmente para suas necessidades específicas.</p>
+</div>
+<!-- Diferencial 2 -->
+<div class="bg-off-white p-12 text-center scroll-reveal hover:translate-y-[-8px] transition-transform duration-500 shadow-[0_40px_40px_-15px_rgba(84,60,60,0.04)]">
+<span class="material-symbols-outlined text-4xl text-luxury-nude mb-6 block" style="font-variation-settings: 'wght' 200;">biotech</span>
+<h3 class="font-headline-md text-headline-md text-truffle-brown mb-4">Tecnologia de Ponta</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Equipamentos de última geração certificados mundialmente para segurança e máxima eficácia.</p>
+</div>
+<!-- Diferencial 3 -->
+<div class="bg-off-white p-12 text-center scroll-reveal hover:translate-y-[-8px] transition-transform duration-500 shadow-[0_40px_40px_-15px_rgba(84,60,60,0.04)]">
+<span class="material-symbols-outlined text-4xl text-luxury-nude mb-6 block" style="font-variation-settings: 'wght' 200;">workspace_premium</span>
+<h3 class="font-headline-md text-headline-md text-truffle-brown mb-4">Ambiente Exclusivo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Espaços privativos projetados para oferecer conforto, luxo e tranquilidade durante sua jornada.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Procedimentos Destaque (Grid Editorial) -->
+<section class="py-section-gap overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex justify-between items-end mb-16 scroll-reveal">
+<div>
+<span class="font-label-caps text-label-caps text-luxury-nude mb-4 block">PROCEDIMENTOS</span>
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown">Destaques da Temporada</h2>
+</div>
+<a class="hidden md:block font-label-caps text-label-caps text-truffle-brown border-b border-truffle-brown pb-1" href="#">VER TODOS</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Card 1 -->
+<div class="md:col-span-8 group relative overflow-hidden h-[600px] scroll-reveal">
+<img alt="Lifting Facial" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A luxurious aesthetic shot of a non-surgical lifting procedure. The focus is on a serene model's face while a professional applicator is used with precision. The lighting is soft and golden, accentuating the smooth skin and fine contours. The background is a blurry, high-end clinic setting in muted cream and brown tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTJMtC1FijbDMRpAJwy3mzCLEIdX9bXv7gSKQ0dmQaHCzZ_C4dgJAO6aZBFGtUiI71tARbGrddAQ_VMsb0O9Pb-ENhJKQAtJ5veH5X7OPnFa-qe4kUidUaLbc-tlbeioO4PiVhPh8lPURQlkTcMdddCzIKU3auTXA94Qs1AcpW3vPy6I9k934XIGiqUX-b9iky3CDePChPXPLXNh1by-ccXUQrO9JorskfM51AE3DhEgVgAT5-rpWRhGzezMP9T9LGatoMfz4vbp2l"/>
+<div class="absolute inset-0 bg-gradient-to-t from-truffle-brown/80 to-transparent flex flex-col justify-end p-12 text-white">
+<span class="font-label-caps text-label-caps mb-2 opacity-80">ESTRUTURAÇÃO</span>
+<h3 class="font-headline-md text-headline-md mb-4">Lifting Facial Sem Cortes</h3>
+<button class="w-fit border border-white/40 hover:bg-white hover:text-truffle-brown transition-all px-6 py-3 font-label-caps text-label-caps">SAIBA MAIS</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<div class="group relative overflow-hidden h-[284px] scroll-reveal">
+<img alt="Ultraformer" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Close-up of high-tech skin rejuvenation equipment in a luxury setting. The lighting emphasizes the sleek metallic finish of the device and its glass components. The atmosphere is clinical yet sophisticated, suggesting the high level of technology used in the clinic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASkq7UcJPPMTqGbKtlyeDBt3XojduwRoHdX3VW7rHyVx9BcAyLH-c4z8aInYq41EBlmk5I-wsbv8yQ-sqVDfHox6kPySeh6TaMp7c5_s3x9clvxBr9T5rL-tXqpKcizZIVlqS8TUzOUsSe1Trcokqm5atMRhY3CdCLqy8wbGw71OjdymG01OZdTUOHvQddRupN0TiECI7qrDyWiDPb11RVASvZDrJKXFWSsmE3nkV2lS_kmzA0WV07PTeXE501Bq87RVMapE5VCOe5"/>
+<div class="absolute inset-0 bg-gradient-to-t from-truffle-brown/80 to-transparent flex flex-col justify-end p-6 text-white">
+<h3 class="font-headline-md text-[20px] mb-2">Ultraformer III</h3>
+<p class="font-label-caps text-[10px] opacity-80">REJUVENESCIMENTO</p>
+</div>
+</div>
+<div class="group relative overflow-hidden h-[284px] scroll-reveal">
+<img alt="Peeling" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A clean, minimalist image of skincare application. A dropper is releasing a crystalline serum onto soft, healthy skin. The lighting is bright and high-key, highlighting the clarity and texture. The color palette is composed of soft whites and luxury nudes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzcoSjg9rDHeUhiPGTWJbH6ya6v6HTLAKqaUdRT7JOh14buhcGkcDb_x81t-i1jZKtAXsEKxo-a6-X7sYxSNGC8BU86ssFxee9NO7UJRYlyhR-G7EZ13_0vDQBFHoSqmkuM3YCEhvV2fSA8PwzH2IZB1gT0nVrfvJOmKPQ_NYSMhKT-1WbnEdki8TeCWJtJ6HD1eAw5oxT8BdAa7XuDelaDZybLMxze3oBWttP5epnFII9RpWOL4S_8mU93iDHaOXZCWxVU0c4VXGB"/>
+<div class="absolute inset-0 bg-gradient-to-t from-truffle-brown/80 to-transparent flex flex-col justify-end p-6 text-white">
+<h3 class="font-headline-md text-[20px] mb-2">Peeling de Cristal</h3>
+<p class="font-label-caps text-[10px] opacity-80">TEXTURA E BRILHO</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Antes e Depois -->
+<section class="py-section-gap bg-surface-container">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<div class="max-w-2xl mx-auto mb-16 scroll-reveal">
+<span class="font-label-caps text-label-caps text-luxury-nude mb-4 block">RESULTADOS</span>
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown mb-6">A Evolução da Naturalidade</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Explore as transformações sutis e impactantes que priorizam a essência de cada rosto.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="relative group scroll-reveal">
+<div class="flex">
+<div class="w-1/2 overflow-hidden border-r border-background">
+<img alt="Antes" class="h-[500px] w-full object-cover" data-alt="Close up before photo of a woman's face focus on fine lines around eyes and dull skin texture. Neutral clinical lighting, minimalist background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVXRyE3owKvdjh4s411RlXzJhCcl_JmY5bRPhN0yEMbTyTzr7G4brNO5mZ1mZerp7N2l4WbBnAWWMdleW6J2fYBlLI98e4Y5kXs7bUSPCp3ULSdtfEQG3BsF8PEwjqHjX5cD4TxOZZZSq_PxVr3d7gZqkOIK5uhvBkSP79Ns1XALF8hrfpx1zv-LKs_n4Y1fiT0JEUF4FfRjWUxB8U8bz32eQuJuNreDysYawYiya2pCmDw_ugaWOpyvPu9swqGpcjI-UJ-sS_yIH6"/>
+<span class="absolute bottom-4 left-4 font-label-caps text-label-caps text-white bg-truffle-brown/50 px-3 py-1">ANTES</span>
+</div>
+<div class="w-1/2 overflow-hidden">
+<img alt="Depois" class="h-[500px] w-full object-cover" data-alt="Close up after photo of the same woman's face, showing significantly improved skin texture, glowing skin, and softened fine lines. The lighting is radiant and soft, highlighting the natural results." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmcHmA47GkS2Fqhij2OEJ4LveiYlrT7VxWp466S_voGrueGI_BGPihBpHVEoeylMBAE-kkGuxb473ZvNGrnIUqPBeju25ZteHhEOfbtMbKdoelvAYkDStK3Ui47W8ISDPg1LFtsB96jn5Lu9nFexcO3SXjyk8mo8OMplzBUlFjSuddsdYBH691spIFowLWSPXK4bK-T62WPpryc6RmmP6DUdsdM4jtriUyEWM4R-2CCVPiQwT_Vsb5DlOoS7uduwR872r_B9koX0aW"/>
+<span class="absolute bottom-4 right-4 font-label-caps text-label-caps text-white bg-luxury-nude/50 px-3 py-1">DEPOIS</span>
+</div>
+</div>
+<div class="mt-6 text-left">
+<h4 class="font-headline-md text-[22px] text-truffle-brown">Protocolo Full Face</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Harmonização sutil com foco em olheiras e contorno mandibular.</p>
+</div>
+</div>
+<div class="relative group scroll-reveal">
+<div class="flex">
+<div class="w-1/2 overflow-hidden border-r border-background">
+<img alt="Antes" class="h-[500px] w-full object-cover" data-alt="Before shot focused on skin laxity around the jawline of a middle-aged woman. Simple, direct lighting to show natural state." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCId1sRzWUaHL-MCieEzA3S8wRRhrPd9TbTCOQhZM2qVvxMmLDcmBWkWJ7rJOhtgVie2Iz4OOQrmJdy70LdhZRMtOVDunyoVEZ_tcFbxfM-D8QtzNHK-Ov7_kn0V-eGKuJfPUbN4waodqWSLaLbmljaNRuxCqjzHI_LcjtZkdHaV-kkxP2ndjtZC3yPZDFAhl6CL3JuAUdMIusFBsu7GIWEWGyDM0vtbu4aU8bGCiU19mIbqiT18P_hxVyrZlSqEgCcTQoZO_paFavf"/>
+<span class="absolute bottom-4 left-4 font-label-caps text-label-caps text-white bg-truffle-brown/50 px-3 py-1">ANTES</span>
+</div>
+<div class="w-1/2 overflow-hidden">
+<img alt="Depois" class="h-[500px] w-full object-cover" data-alt="After shot showing the effects of Ultraformer treatment on the jawline, resulting in a tighter, more defined contour. The skin looks lifted and fresh. Bright, elegant lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI0YqtFwFmQp5NIEpWXYN-IKONAf-PRVmwarONkUoLAnAHKj1ocRf2sM8I7ROEFD7b7TJ6ti-GsWv4iQbdKanwNEfNkqfUQEJy3R8v6UJWrCIk-xlbPuHB_j68WeVTUJrKregQSTdS1JIm9iyqqqwRsvk6RSVAJfqo2ndygjQ5EAsjvATliVAD7QmOQH3tECfBZKs7VvAoihpn41ONOy24SwxAD_efDqrHF0fNmpO6t7ziuyMBAuBw6TwuadDfx5z9yIF3M2ojYMzA"/>
+<span class="absolute bottom-4 right-4 font-label-caps text-label-caps text-white bg-luxury-nude/50 px-3 py-1">DEPOIS</span>
+</div>
+</div>
+<div class="mt-6 text-left">
+<h4 class="font-headline-md text-[22px] text-truffle-brown">Ultraformer Jawline</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Definição do ângulo da mandíbula e redução de papada.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Avaliações -->
+<section class="py-section-gap bg-off-white">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="scroll-reveal">
+<div class="flex text-champagne-gold mb-4"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></div>
+<p class="font-headline-md text-[20px] italic text-truffle-brown mb-6 leading-relaxed">"A experiência na Palomares é única. Nunca me senti tão bem cuidada e o resultado do Ultraformer superou todas as minhas expectativas."</p>
+<span class="font-label-caps text-label-caps text-luxury-nude">— MARINA SILVA</span>
+</div>
+<div class="scroll-reveal" style="transition-delay: 0.2s;">
+<div class="flex text-champagne-gold mb-4"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></div>
+<p class="font-headline-md text-[20px] italic text-truffle-brown mb-6 leading-relaxed">"O que mais gosto é a naturalidade. Ninguém diz que fiz algo, apenas que estou descansada e com a pele maravilhosa."</p>
+<span class="font-label-caps text-label-caps text-luxury-nude">— BEATRIZ COSTA</span>
+</div>
+<div class="scroll-reveal" style="transition-delay: 0.4s;">
+<div class="flex text-champagne-gold mb-4"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></div>
+<p class="font-headline-md text-[20px] italic text-truffle-brown mb-6 leading-relaxed">"Ambiente de extremo bom gosto e profissionais de altíssimo nível. O melhor investimento que já fiz em mim mesma."</p>
+<span class="font-label-caps text-label-caps text-luxury-nude">— RENATA MOURA</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Unidades -->
+<section class="py-section-gap">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="scroll-reveal">
+<span class="font-label-caps text-label-caps text-luxury-nude mb-4 block">ONDE ESTAMOS</span>
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown mb-8">Nossas Unidades</h2>
+<div class="space-y-8">
+<div class="group cursor-pointer">
+<h3 class="font-headline-md text-headline-md text-truffle-brown group-hover:text-luxury-nude transition-colors">LEBLON</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Av. Ataulfo de Paiva, 1250 - Sala 402</p>
+<p class="font-label-caps text-[10px] text-luxury-nude mt-2">RIO DE JANEIRO, RJ</p>
+</div>
+<div class="w-full h-px bg-carrara-gray/50"></div>
+<div class="group cursor-pointer">
+<h3 class="font-headline-md text-headline-md text-truffle-brown group-hover:text-luxury-nude transition-colors">BARRA DA TIJUCA</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Av. das Américas, 500 - Bloco 2, Sala 105</p>
+<p class="font-label-caps text-[10px] text-luxury-nude mt-2">RIO DE JANEIRO, RJ</p>
+</div>
+</div>
+</div>
+<div class="relative h-[500px] bg-surface-container-high rounded-lg overflow-hidden scroll-reveal">
+<div class="absolute inset-0 bg-luxury-nude/10"></div>
+<img alt="Map Visualization" class="w-full h-full object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-700" data-location="Rio de Janeiro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_59FNw8_dqBV3hpqUn1cUHLSqR22RwBQHpZpadfhf_Xc0BWATVn9iNm3Dq50zr1q53Kqdlk1KCim6gJ-Oh0BxJVN8wFF-0jTm-oAwTZG4XZOqj_CfB4REDEyGAx9WcdxhLmA1fn2zeBhdYjZtY9LFsRXIBGPUCw9j5PIEFKcjDlhalXSOi4pG7g99X2xioYnRRwbXpg310MdoVKvayhXSjr7JpM1oq7-2AZreRI8H8sCV164c9Q4JtbIgkvWve8EU6hVccw5qbncs"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-12 h-12 bg-truffle-brown rounded-full flex items-center justify-center text-white shadow-xl animate-pulse">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Final -->
+<section class="py-section-gap">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-primary-container p-16 md:p-24 text-center scroll-reveal relative overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-luxury-nude/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-8 relative z-10">Inicie Sua Jornada de Beleza</h2>
+<p class="font-body-lg text-body-lg text-luxury-nude mb-12 max-w-xl mx-auto relative z-10">Nossa equipe está pronta para desenhar o protocolo perfeito para você. Entre em contato agora pelo WhatsApp.</p>
+<button class="btn-gradient text-white px-10 py-5 font-label-caps text-label-caps shadow-2xl hover:scale-105 transition-all flex items-center gap-3 mx-auto relative z-10">
+                        FALAR COM UMA CONSULTORA <span class="material-symbols-outlined">chat</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-6 md:px-[80px] py-[120px] grid grid-cols-1 md:grid-cols-4 gap-gutter bg-surface-container-low border-t border-outline-variant">
+<div class="md:col-span-1">
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown mb-6">Palomares Beauty</h2>
+<p class="font-body-md text-body-md text-on-secondary-container opacity-70 mb-8">Redefinindo o conceito de luxo e cuidado dermatológico no Rio de Janeiro.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-truffle-brown/20 flex items-center justify-center rounded-full text-truffle-brown hover:bg-truffle-brown hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="w-10 h-10 border border-truffle-brown/20 flex items-center justify-center rounded-full text-truffle-brown hover:bg-truffle-brown hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-truffle-brown font-semibold mb-6">PÁGINAS</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Início</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Tratamentos</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Nossa Clínica</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-truffle-brown font-semibold mb-6">LEGAL</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Termos de Uso</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Privacidade</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Carreiras</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Imprensa</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-truffle-brown font-semibold mb-6">NEWSLETTER</h4>
+<p class="font-body-md text-body-md text-on-secondary-container opacity-70 mb-4">Receba novidades sobre tecnologia e beleza.</p>
+<form class="flex border-b border-truffle-brown/20 pb-2">
+<input class="bg-transparent border-none focus:ring-0 w-full placeholder:text-on-surface-variant/40 text-body-md" placeholder="Seu e-mail" type="email"/>
+<button class="text-truffle-brown hover:text-luxury-nude transition-colors" type="submit"><span class="material-symbols-outlined">arrow_forward</span></button>
+</form>
+</div>
+<div class="md:col-span-4 pt-12 border-t border-truffle-brown/5 mt-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-label-caps text-[10px] text-on-secondary-container opacity-50 uppercase tracking-widest">© 2024 Palomares Beauty. Todos os direitos reservados. Excelência Médica e Estética de Luxo.</p>
+<p class="font-label-caps text-[10px] text-on-secondary-container opacity-50 uppercase tracking-widest">CRMB-RJ: 123456 | RT: DRA. ANA PALOMARES</p>
+</div>
+</footer>
+<script>
+        // Scroll Reveal logic
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+        // Smooth header hide/show
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            const header = document.querySelector('header');
+            
+            if (currentScroll <= 0) {
+                header.classList.remove('-translate-y-full');
+                return;
+            }
+            
+            if (currentScroll > lastScroll && !header.classList.contains('-translate-y-full')) {
+                header.classList.add('-translate-y-full');
+            } else if (currentScroll < lastScroll && header.classList.contains('-translate-y-full')) {
+                header.classList.remove('-translate-y-full');
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+</body></html>

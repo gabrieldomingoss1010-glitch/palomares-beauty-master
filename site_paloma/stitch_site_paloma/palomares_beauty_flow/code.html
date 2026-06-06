@@ -1,0 +1,292 @@
+<!DOCTYPE html><html class="scroll-smooth dark" lang="pt-BR" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Palomares Beauty | A Essência da Beleza Natural</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&amp;family=Manrope:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"surface-container": "#221f1f", "surface-tint": "#e1bebe", "on-error": "#690005", "primary-fixed-dim": "#e1bebe", "inverse-primary": "#725858", "tertiary-fixed-dim": "#b8cbbe", "on-surface-variant": "#d3c3c2", "primary-container": "#543c3c", "secondary-container": "#554336", "inverse-on-surface": "#33302f", "on-tertiary-fixed": "#0e1f16", "clover-cream": "#FBF9F4", "warm-sand": "#CAB2A1", "surface-dim": "#151313", surface: "#151313", primary: "#e1bebe", "secondary-fixed-dim": "#dbc2b0", "on-error-container": "#ffdad6", "surface-container-highest": "#373434", "on-primary-fixed-variant": "#594141", "on-secondary-fixed-variant": "#554336", "outline-variant": "#4f4444", secondary: "#dbc2b0", "on-secondary-container": "#c9b1a0", "surface-container-lowest": "#100e0e", "truffle-brown": "#543C3C", "tertiary-fixed": "#d4e7d9", "on-background": "#e8e1e0", outline: "#9c8d8d", "on-tertiary-fixed-variant": "#394b40", "on-primary-container": "#c8a7a6", "primary-fixed": "#fedad9", "linen-white": "#FFFFFF", tertiary: "#b8cbbe", "tertiary-container": "#35463c", "surface-bright": "#3c3838", "error-container": "#93000a", "surface-variant": "#373434", "on-secondary-fixed": "#26190e", "on-primary-fixed": "#2a1617", "on-tertiary": "#23342b", "surface-container-high": "#2c2929", "secondary-fixed": "#f8decb", "surface-container-low": "#1e1b1b", "on-primary": "#412b2b", "inverse-surface": "#e8e1e0", "on-tertiary-container": "#a0b3a6", "on-secondary": "#3d2d21", "on-surface": "#e8e1e0", background: "#151313", "taupe-mute": "#8E7E73", error: "#ffb4ab"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"section-padding-lg": "120px", unit: "8px", gutter: "24px", "section-padding-sm": "64px", "container-max": "1280px"}, fontFamily: {"body-lg": ["Manrope"], "display-lg-mobile": ["Playfair Display"], "label-caps": ["Manrope"], "body-md": ["Manrope"], "headline-md": ["Playfair Display"], "headline-lg": ["Playfair Display"], "display-lg": ["Playfair Display"], headline: ["Playfair Display"], display: ["Playfair Display"], body: ["Manrope"], label: ["Manrope"]}, fontSize: {"body-lg": ["18px", {lineHeight: "1.6", fontWeight: "400"}], "display-lg-mobile": ["40px", {lineHeight: "1.2", fontWeight: "600"}], "label-caps": ["12px", {lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "700"}], "body-md": ["16px", {lineHeight: "1.6", fontWeight: "400"}], "headline-md": ["32px", {lineHeight: "1.3", fontWeight: "500"}], "headline-lg": ["48px", {lineHeight: "1.2", fontWeight: "500"}], "display-lg": ["64px", {lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "600"}]}}}};</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(251, 249, 244, 0) 0%, rgba(251, 249, 244, 1) 100%);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-clover-cream text-truffle-brown font-body-md selection:bg-warm-sand/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-clover-cream/90 backdrop-blur-md">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-gutter py-unit h-20">
+<div class="font-headline-md text-headline-md text-truffle-brown tracking-tight">alomares Beauty
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md uppercase tracking-wider text-truffle-brown border-b-2 border-warm-sand pb-1 cursor-pointer active:scale-95 transition-transform" href="#home">Home</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-taupe-mute hover:text-truffle-brown transition-colors duration-300 cursor-pointer active:scale-95" href="#sobre">Sobre</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-taupe-mute hover:text-truffle-brown transition-colors duration-300 cursor-pointer active:scale-95" href="#servicos">Serviços</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-taupe-mute hover:text-truffle-brown transition-colors duration-300 cursor-pointer active:scale-95" href="#resultados">Resultados</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-taupe-mute hover:text-truffle-brown transition-colors duration-300 cursor-pointer active:scale-95" href="#contato">Contato</a>
+</div>
+<a class="bg-truffle-brown text-linen-white px-6 py-3 rounded-lg font-bold hover:bg-opacity-90 transition-all duration-300 active:scale-95" href="https://wa.me/yourlink">
+                Agendar Consulta
+            </a>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden" id="home">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A soft and minimalist aesthetic treatment room with warm, diffused natural light filtering through sheer linen curtains. The space features organic textures like light wood and smooth stone, embodying a high-end luxury wellness atmosphere. The color palette is dominated by creams, beiges, and soft taupe tones, creating a serene and sophisticated environment for expert dermatological care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDevyZHSduHiRVGWXwg3WC_lwqDB0r6G96TfZa62a3_ACqay8yPlSeu7s-53PLjsojfHSyCtexkRbxtL63Tiz0jX7ixJ0Mbb11hfxcgQfmn5GsVOINXI-wBZ3_3Y2zTb-kHiyQ5FaTyJlD1qe_Bntx-KOYC-eF4AGGoasj6R0Ni84Y-TggkYw4h2X7Vho1pDh8aRd8e5HRfQkUUJ2kEJFe7NFhfHt2o24Y_J9pVi9knYL-yUwRAUUi9sypQ-09UO1IPfczmV4FCexqs">
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="container max-w-container-max mx-auto px-gutter relative z-10">
+<div class="max-w-2xl reveal active">
+<span class="inline-block font-label-caps text-label-caps uppercase tracking-[0.2em] text-warm-sand mb-4">Bem-vinda à Palomares</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-truffle-brown mb-6">
+                        A Essência da <br><span class="italic font-normal">Beleza Natural</span>
+</h1>
+<p class="font-body-lg text-body-lg text-taupe-mute mb-10 max-w-lg">
+                        Aliamos ciência avançada e sensibilidade artística para realçar sua melhor versão através de cuidados estéticos de alto padrão em um ambiente de serenidade absoluta.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-truffle-brown text-linen-white px-8 py-4 rounded-lg font-bold text-body-md hover:bg-opacity-90 transition-all active:scale-95">
+                            Agendar Consulta
+                        </button>
+<button class="border-[1.5px] border-warm-sand text-truffle-brown px-8 py-4 rounded-lg font-bold text-body-md hover:bg-warm-sand hover:text-linen-white transition-all active:scale-95">
+                            Conhecer Serviços
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Introduction Section -->
+<section class="bg-clover-cream py-section-padding-sm md:py-section-padding-lg">
+<div class="container max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="reveal active">
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown mb-8">Nossa Filosofia</h2>
+<div class="space-y-6 text-taupe-mute font-body-lg">
+<p class="">Na Palomares Beauty, acreditamos que a beleza não deve ser padronizada, mas sim descoberta. Cada traço do seu rosto conta uma história única, e nosso papel é polir esses detalhes com precisão e elegância.</p>
+<p class="">Nossa abordagem "Clean Organic Luxury" prioriza tratamentos minimamente invasivos que preservam a sua identidade, entregando resultados sofisticados que irradiam saúde e bem-estar de dentro para fora.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 reveal active" style="transition-delay: 200ms;">
+<div class="space-y-4 pt-12">
+<img class="w-full h-64 object-cover rounded-lg" data-alt="Close-up detail of a premium skincare product texture, creamy and luxurious, being applied to a clean surface. The lighting is soft and high-key, highlighting the organic and smooth consistency of the product in a minimalist, high-end studio setting using warm sand and clover cream tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjzx6BD_cJsuEPMuAkCpHIwCdCOypGKhQGRlhUBUjm-kmvpO73JeiaWE5XIasuXzVt9zOF79fo_FQKufdIQzKhqM4lLoBKqvLeSw9k_G7SSwBAsNqMXW6POKVVcTMwfz_CW4HZ8orRLpYdJT-1lr-5WIvgppN6O8kZ7mgUuTKdD0NOGdhdgWdvL2oZhSvDGlaaBrjX8P1it28EaByxVZa0QB0O4QqXdju3VqXlv5gNC5ccUESyVlkMo2sJWpDLDnGZf3aHkWUZ0jHF">
+<div class="bg-warm-sand/10 p-8 rounded-lg">
+<span class="material-symbols-outlined text-warm-sand text-4xl mb-4" data-icon="auto_awesome">auto_awesome</span>
+<p class="font-headline-md text-2xl text-truffle-brown">Expertise em cada detalhe.</p>
+</div>
+</div>
+<div class="space-y-4">
+<img class="w-full h-80 object-cover rounded-lg" data-alt="A serene woman receiving a gentle facial massage in a bright, modern clinic. Her skin is glowing and clean, emphasizing natural beauty. The background is softly blurred with bokeh, focusing on the professional and delicate touch of the aesthetician in a luxury wellness environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbyEQz5aT1uwoTHxgNHI1I5SbaudDp1V5XccBBLhyangzNE2uheddO8YrhxTaR-io3x5MpRVOfbbM8uz_g2O4kKZqNQC0MqYekCRGpWM0Z-EY54zL0GIHUjZ1F6cVkAMWEd8rDcIk50Yh0sTYgpC35DKG8amptuYnUHl9Crx7r9yK1PdXzRV3PSfgku8nVbISYDlrcy1BnbQT9M8z9BwsNlxAgeS9HvR2SXu6Ei91hX4lzDqeUnaWAmroHoum_-2CkRJEKLtm7VtAH">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Preview Section -->
+<section class="bg-surface-container-low py-section-padding-sm md:py-section-padding-lg" id="servicos">
+<div class="container max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16 reveal active">
+<span class="font-label-caps text-label-caps text-warm-sand uppercase tracking-widest mb-4 block">Especialidades</span>
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown">Tratamentos Sob Medida</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<!-- Pele -->
+<div class="group bg-linen-white p-8 rounded-lg border border-[#E5E0D8] transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-truffle-brown/5 reveal active">
+<span class="material-symbols-outlined text-warm-sand text-3xl mb-6" data-icon="face">face</span>
+<h3 class="font-headline-md text-2xl text-truffle-brown mb-4">Pele</h3>
+<p class="text-taupe-mute text-body-md mb-6">Protocolos de rejuvenescimento e hidratação profunda.</p>
+<a class="text-truffle-brown font-bold text-sm inline-flex items-center group-hover:gap-2 transition-all" href="#">Ver Detalhes <span class="material-symbols-outlined ml-1" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Sobrancelhas -->
+<div class="group bg-linen-white p-8 rounded-lg border border-[#E5E0D8] transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-truffle-brown/5 reveal active" style="transition-delay: 100ms;">
+<span class="material-symbols-outlined text-warm-sand text-3xl mb-6" data-icon="visibility">visibility</span>
+<h3 class="font-headline-md text-2xl text-truffle-brown mb-4">Sobrancelhas</h3>
+<p class="text-taupe-mute text-body-md mb-6">Design estratégico para realçar o seu olhar naturalmente.</p>
+<a class="text-truffle-brown font-bold text-sm inline-flex items-center group-hover:gap-2 transition-all" href="#">Ver Detalhes <span class="material-symbols-outlined ml-1" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Lábios -->
+<div class="group bg-linen-white p-8 rounded-lg border border-[#E5E0D8] transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-truffle-brown/5 reveal active" style="transition-delay: 200ms;">
+<span class="material-symbols-outlined text-warm-sand text-3xl mb-6" data-icon="lips">laps</span>
+<h3 class="font-headline-md text-2xl text-truffle-brown mb-4">Lábios</h3>
+<p class="text-taupe-mute text-body-md mb-6">Revitalização labial com foco em cor e contorno suave.</p>
+<a class="text-truffle-brown font-bold text-sm inline-flex items-center group-hover:gap-2 transition-all" href="#">Ver Detalhes <span class="material-symbols-outlined ml-1" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Cílios -->
+<div class="group bg-linen-white p-8 rounded-lg border border-[#E5E0D8] transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-truffle-brown/5 reveal active" style="transition-delay: 300ms;">
+<span class="material-symbols-outlined text-warm-sand text-3xl mb-6" data-icon="eye_tracking">eye_tracking</span>
+<h3 class="font-headline-md text-2xl text-truffle-brown mb-4">Cílios</h3>
+<p class="text-taupe-mute text-body-md mb-6">Extensões delicadas que imitam o fio natural.</p>
+<a class="text-truffle-brown font-bold text-sm inline-flex items-center group-hover:gap-2 transition-all" href="#">Ver Detalhes <span class="material-symbols-outlined ml-1" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Avaliação -->
+<div class="group bg-truffle-brown p-8 rounded-lg transition-all duration-500 hover:-translate-y-2 reveal active" style="transition-delay: 400ms;">
+<span class="material-symbols-outlined text-warm-sand text-3xl mb-6" data-icon="clinical_notes">clinical_notes</span>
+<h3 class="font-headline-md text-2xl text-linen-white mb-4">Avaliação</h3>
+<p class="text-primary-fixed-dim text-body-md mb-6">Análise personalizada para o seu plano de beleza.</p>
+<a class="text-warm-sand font-bold text-sm inline-flex items-center group-hover:gap-2 transition-all" href="#">Agendar Agora <span class="material-symbols-outlined ml-1" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Professional Section -->
+<section class="py-section-padding-sm md:py-section-padding-lg overflow-hidden" id="sobre">
+<div class="container max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col lg:flex-row items-center gap-20">
+<div class="w-full lg:w-1/2 relative reveal active">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-warm-sand/20 rounded-full blur-3xl"></div>
+<div class="relative z-10 border-8 border-linen-white shadow-2xl rounded-lg overflow-hidden">
+<img alt="Palomares Beauty Professional" class="w-full aspect-[0.67] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvswADrH5JsPIRQjCkhRUDjjYxNzIFQFBhp73vf-EJVF45tBU6sXxb8HJ1d9Q1LIIDB1NGtmCgKYZ1OKNQQpvo0oxg3hDrOm09Am0tHpQwt3aM170rY0AAsAK-54KTtDPiMkeRMrGZ2Khg1_zZYy7qi-Q6C87Qg82jW2YKQnKVcGL6rXtbARHWWnnRTUcATqvvjHFhZsVtA3WV0n9MBWVEL8Zc6lDEAmiGxU1Xpu2U1HTrRBQ6hUq-5IHyDl2mXhYL3DYvd7ixFmYG">
+</div>
+</div>
+<div class="w-full lg:w-1/2 reveal active" style="transition-delay: 200ms;">
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown mb-8">Excelência &amp; Dedicação</h2>
+<h3 class="font-headline-md text-2xl text-warm-sand mb-6">Dra. Flavia Palomares</h3>
+<p class="text-body-lg text-taupe-mute mb-8 leading-relaxed">
+                            Com especialização internacional e um olhar voltado para a estética humanizada, Flavia Palomares fundou a clínica para ser um refúgio onde a técnica se encontra com a arte. Sua trajetória é marcada pela busca incessante por protocolos que respeitem a anatomia e a saúde da pele.
+                        </p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-start gap-3 text-taupe-mute">
+</li>
+<li class="flex items-start gap-3 text-taupe-mute">
+</li>
+<li class="flex items-start gap-3 text-taupe-mute">
+</li>
+</ul>
+<button class="bg-truffle-brown text-linen-white px-10 py-4 rounded-lg font-bold hover:bg-opacity-90 transition-all active:scale-95">
+                            Saiba mais sobre a clínica
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="bg-clover-cream py-section-padding-sm md:py-section-padding-lg border-y border-outline-variant/30" id="resultados">
+<div class="container max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16 reveal active">
+<span class="font-label-caps text-label-caps text-warm-sand uppercase tracking-widest mb-4 block">Experiências</span>
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown">O que dizem nossas pacientes</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-linen-white p-10 rounded-xl border border-warm-sand/20 shadow-sm flex flex-col items-center text-center reveal active"><div class="text-warm-sand mb-6"><span class="material-symbols-outlined text-4xl" data-icon="format_quote" data-weight="fill">format_quote</span></div><p class="text-body-lg italic text-taupe-mute mb-8">"Conheço a Flávia desde a época em que ela trabalhava em sua casa: sempre foi uma profissional impecável, gentil e alegre. Agora, em sua clínica, não poderia ser diferente. Todos os profissionais são excelentes, e o atendimento é tão bom que até ficamos constrangidos kkkk. E, claro, os resultados dos procedimentos sempre superam nossas expectativas. Só faço minhas sobrancelhas lá. Não encontrei nenhuma outra profissional que supere a precisão e o perfeccionismo dela."</p><div><p class="font-bold text-truffle-brown">Isabella Ariane</p><p class="text-sm text-taupe-mute">Paciente</p></div></div>
+<!-- Testimonial 2 -->
+<div class="bg-linen-white p-10 rounded-xl border border-warm-sand/20 shadow-sm flex flex-col items-center text-center reveal active" style="transition-delay: 150ms;"><div class="text-warm-sand mb-6"><span class="material-symbols-outlined text-4xl" data-icon="format_quote" data-weight="fill">format_quote</span></div><p class="text-body-lg italic text-taupe-mute mb-8">"Minha experiência na Palomares foi perfeita, desde a chegada fui recebida com muito carinho. As meninas são maravilhosas e o atendimento impecável. Utilizam os melhores produtos do mercado. Com certeza voltarei e indico muito ! 😍"</p><div><p class="font-bold text-truffle-brown">Lorena Carvalho</p><p class="text-sm text-taupe-mute">Paciente</p></div></div>
+<!-- Testimonial 3 -->
+<div class="bg-linen-white p-10 rounded-xl border border-warm-sand/20 shadow-sm flex flex-col items-center text-center reveal active" style="transition-delay: 300ms;"><div class="text-warm-sand mb-6"><span class="material-symbols-outlined text-4xl" data-icon="format_quote" data-weight="fill">format_quote</span></div><p class="text-body-lg italic text-taupe-mute mb-8">"Experiência incrível! Atendimento maravilhoso, com muita atenção e cuidado. Profissionalismo impecável, o tratamento das sobrancelhas para preenchimento e crescimento dos fios, com resultado excelente, peeling de Hollywood, lash lifting nos cílios, todos procedimentos perfeitos, super indico!"</p><div><p class="font-bold text-truffle-brown">Andréa Lira</p><p class="text-sm text-taupe-mute">Paciente</p></div></div>
+</div>
+</div>
+</section>
+<!-- CTA/Contact Section -->
+<section class="py-section-padding-sm md:py-section-padding-lg bg-surface-container" id="contato">
+<div class="container max-w-container-max mx-auto px-gutter text-center reveal active">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown mb-6">Pronta para realçar sua beleza natural?</h2>
+<p class="font-body-lg text-taupe-mute mb-12">Agende sua avaliação personalizada e descubra o plano ideal para as suas necessidades. Estamos ansiosos para recebê-la em nosso espaço.</p>
+<div class="flex flex-col items-center gap-6">
+<a class="inline-flex items-center gap-3 bg-truffle-brown text-linen-white px-12 py-5 rounded-lg font-bold text-lg hover:shadow-lg transition-all active:scale-95 group" href="https://wa.me/yourlink">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                            Agendar via WhatsApp
+                        </a>
+<p class="text-taupe-mute">Ou ligue para&nbsp;<span class="" style="color: rgb(28, 30, 33); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255);">65 98150-1744</span></p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-gutter py-section-padding-sm">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-lg text-headline-lg text-truffle-brown mb-6">
+                    Palomares<br>Beauty
+                </div>
+<p class="text-taupe-mute text-body-md mb-6">Onde a sofisticação encontra o cuidado orgânico.</p>
+</div>
+<div class="col-span-1">
+<h4 class="font-bold text-truffle-brown mb-6 uppercase text-sm tracking-widest">Navegação</h4>
+<ul class="space-y-4 font-body-md text-secondary">
+<li class=""><a class="hover:text-warm-sand transition-colors" href="#home">Início</a></li>
+<li class=""><a class="hover:text-warm-sand transition-colors" href="#sobre">A Clínica</a></li>
+<li class=""><a class="hover:text-warm-sand transition-colors" href="#servicos">Serviços</a></li>
+<li class=""><a class="hover:text-warm-sand transition-colors" href="#contato">Contato</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-bold text-truffle-brown mb-6 uppercase text-sm tracking-widest">Legal</h4>
+<ul class="space-y-4 font-body-md text-secondary">
+<li class=""><a class="hover:text-warm-sand transition-colors" href="#">Políticas de Privacidade</a></li>
+<li class=""><a class="hover:text-warm-sand transition-colors" href="#">Termos de Uso</a></li>
+<li class=""><a class="hover:text-warm-sand transition-colors" href="https://www.google.com/maps/place/Cl%C3%ADnica+Palomares+Beauty+%7C+Cuiab%C3%A1+%7C+Sobrancelhas+%7C+Pele+%7C+L%C3%A1bios/@-15.5866448,-56.0763103,1047m/data=!3m2!1e3!4b1!4m6!3m5!1s0x939db16ebf8a3535:0xbe87db9ce8d76991!8m2!3d-15.5866448!4d-56.0763103!16s%2Fg%2F11jrnldfkc" rel="noopener noreferrer" target="_blank">Localização</a></li><li class="text-taupe-mute text-sm mt-2">Cuiabá, MT</li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-bold text-truffle-brown mb-6 uppercase text-sm tracking-widest">Redes Sociais</h4>
+<ul class="space-y-4 font-body-md text-secondary">
+<li class=""><a class="hover:text-warm-sand transition-colors" href="#">Instagram</a></li>
+<li class=""><a class="hover:text-warm-sand transition-colors" href="#">WhatsApp</a></li>
+<li class=""><a class="hover:text-warm-sand transition-colors" href="#">Facebook</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter py-8 border-t border-outline-variant/30 text-center md:text-left text-taupe-mute text-sm">
+            © 2026 Palomares Beauty. Todos os direitos reservados.
+        </div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 z-[60] bg-truffle-brown text-linen-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-90 transition-all duration-300" href="https://wa.me/yourlink">
+<span class="material-symbols-outlined text-3xl" data-icon="chat">chat</span>
+</a>
+<script>
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header scroll behavior
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+
+
+</body></html>

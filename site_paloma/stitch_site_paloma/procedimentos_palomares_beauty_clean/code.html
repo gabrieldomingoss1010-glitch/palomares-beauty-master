@@ -1,0 +1,314 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="pt-BR" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"surface-container": "#f4eceb", "surface-tint": "#725858", "on-error": "#ffffff", "primary-fixed-dim": "#e1bebe", "inverse-primary": "#e1bebe", "tertiary-fixed-dim": "#b8cbbe", "on-surface-variant": "#4f4444", "primary-container": "#543c3c", "secondary-container": "#f8decb", "inverse-on-surface": "#f7efee", "on-tertiary-fixed": "#0e1f16", "clover-cream": "#FBF9F4", "warm-sand": "#CAB2A1", "surface-dim": "#dfd8d8", surface: "#fff8f7", primary: "#3c2627", "secondary-fixed-dim": "#dbc2b0", "on-error-container": "#93000a", "surface-container-highest": "#e8e1e0", "on-primary-fixed-variant": "#594141", "on-secondary-fixed-variant": "#554336", "outline-variant": "#d3c3c2", secondary: "#6e5b4d", "on-secondary-container": "#746152", "surface-container-lowest": "#ffffff", "truffle-brown": "#543C3C", "tertiary-fixed": "#d4e7d9", "on-background": "#1e1b1b", outline: "#817474", "on-tertiary-fixed-variant": "#394b40", "on-primary-container": "#c8a7a6", "primary-fixed": "#fedad9", "linen-white": "#FFFFFF", tertiary: "#1f3026", "tertiary-container": "#35463c", "surface-bright": "#fff8f7", "error-container": "#ffdad6", "surface-variant": "#e8e1e0", "on-secondary-fixed": "#26190e", "on-primary-fixed": "#2a1617", "on-tertiary": "#ffffff", "surface-container-high": "#eee6e6", "secondary-fixed": "#f8decb", "surface-container-low": "#f9f2f1", "on-primary": "#ffffff", "inverse-surface": "#33302f", "on-tertiary-container": "#a0b3a6", "on-secondary": "#ffffff", "on-surface": "#1e1b1b", background: "#fff8f7", "taupe-mute": "#8E7E73", error: "#ba1a1a"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"section-padding-lg": "120px", unit: "8px", gutter: "24px", "section-padding-sm": "64px", "container-max": "1280px"}, fontFamily: {"body-lg": ["Manrope"], "display-lg-mobile": ["Playfair Display"], "label-caps": ["Manrope"], "body-md": ["Manrope"], "headline-md": ["Playfair Display"], "headline-lg": ["Playfair Display"], "display-lg": ["Playfair Display"], headline: ["Playfair Display"], display: ["Playfair Display"], body: ["Manrope"], label: ["Manrope"]}, fontSize: {"body-lg": ["18px", {lineHeight: "1.6", fontWeight: "400"}], "display-lg-mobile": ["40px", {lineHeight: "1.2", fontWeight: "600"}], "label-caps": ["12px", {lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "700"}], "body-md": ["16px", {lineHeight: "1.6", fontWeight: "400"}], "headline-md": ["32px", {lineHeight: "1.3", fontWeight: "500"}], "headline-lg": ["48px", {lineHeight: "1.2", fontWeight: "500"}], "display-lg": ["64px", {lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "600"}]}}}};</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-clover-cream text-truffle-brown font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full bg-clover-cream/90 backdrop-blur-md h-20 z-50">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-gutter py-unit h-full">
+<h1 class="font-headline-md text-headline-md text-truffle-brown tracking-tight">Palomares Beauty</h1>
+<nav class="hidden md:flex space-x-8">
+<a class="font-body-md text-body-md uppercase tracking-wider text-taupe-mute hover:text-truffle-brown transition-colors duration-300 cursor-pointer active:scale-95 transition-transform" href="#">Home</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-taupe-mute hover:text-truffle-brown transition-colors duration-300 cursor-pointer active:scale-95 transition-transform" href="#">Sobre</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-truffle-brown border-b-2 border-warm-sand pb-1 cursor-pointer active:scale-95 transition-transform" href="#">Serviços</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-taupe-mute hover:text-truffle-brown transition-colors duration-300 cursor-pointer active:scale-95 transition-transform" href="#">Resultados</a><a class="font-body-md text-body-md uppercase tracking-wider text-taupe-mute hover:text-truffle-brown transition-colors duration-300 cursor-pointer active:scale-95 transition-transform" href="#">Treinamento</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-taupe-mute hover:text-truffle-brown transition-colors duration-300 cursor-pointer active:scale-95 transition-transform" href="#">Contato</a>
+</nav>
+<button class="bg-truffle-brown text-white font-body-md px-6 py-3 rounded-lg hover:opacity-90 active:scale-95 transition-all">
+                Agendar Consulta
+            </button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter py-section-padding-sm md:py-section-padding-lg text-center reveal-on-scroll visible">
+<span class="font-label-caps text-label-caps text-warm-sand mb-4 block">EXCELÊNCIA EM ESTÉTICA</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 max-w-3xl mx-auto">Nossos Procedimentos</h2>
+<p class="font-body-lg text-body-lg text-taupe-mute max-w-2xl mx-auto">
+                Uma curadoria de tratamentos faciais e corporais desenhados para realçar sua beleza natural com a precisão técnica que você merece.
+            </p>
+</section>
+<!-- Category 1: Pele -->
+<section class="max-w-container-max mx-auto px-gutter py-section-padding-sm border-t border-warm-sand/20 reveal-on-scroll visible">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<span class="font-label-caps text-label-caps text-warm-sand">CATEGORIA</span>
+<h3 class="font-headline-lg text-headline-lg mt-2">Pele</h3>
+</div>
+<p class="font-body-md text-taupe-mute max-w-md">Cuidados avançados para uma derme saudável, luminosa e rejuvenescida através de tecnologias de ponta.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Epilação Buço -->
+<div class="bg-linen-white p-8 rounded-lg border border-[#E5E0D8] group hover:border-warm-sand transition-colors duration-500" style="transition: transform 0.3s ease-out, border-color 0.5s ease-out; transform: translateY(0px);">
+<h4 class="font-headline-md text-headline-md mb-3">Epilação Buço</h4>
+<p class="font-body-md text-taupe-mute mb-8">Remoção delicada e duradoura para uma região suave e livre de imperfeições.</p>
+<div class="flex items-center justify-between">
+<button class="text-truffle-brown font-body-md border-b border-truffle-brown hover:border-warm-sand transition-all">Saiba Mais</button>
+<span class="material-symbols-outlined text-warm-sand">face</span>
+</div>
+</div>
+<!-- Limpeza de Pele -->
+<div class="bg-linen-white p-8 rounded-lg border border-[#E5E0D8] group hover:border-warm-sand transition-colors duration-500" style="transition: transform 0.3s ease-out, border-color 0.5s ease-out; transform: translateY(0px);">
+<h4 class="font-headline-md text-headline-md mb-3">Limpeza de Pele</h4>
+<p class="font-body-md text-taupe-mute mb-8">Protocolo profundo de higienização e extração, devolvendo o viço e a saúde aos poros.</p>
+<div class="flex items-center justify-between">
+<button class="text-truffle-brown font-body-md border-b border-truffle-brown hover:border-warm-sand transition-all">Saiba Mais</button>
+<span class="material-symbols-outlined text-warm-sand">water_drop</span>
+</div>
+</div>
+<!-- Lifting Facial -->
+<div class="bg-linen-white p-8 rounded-lg border border-[#E5E0D8] group hover:border-warm-sand transition-colors duration-500" style="transition: transform 0.3s ease-out, border-color 0.5s ease-out;">
+<h4 class="font-headline-md text-headline-md mb-3">Lifting Facial</h4>
+<p class="font-body-md text-taupe-mute mb-8">Técnicas manuais e tecnológicas para reposicionamento tecidual e contorno definido.</p>
+<div class="flex items-center justify-between">
+<button class="text-truffle-brown font-body-md border-b border-truffle-brown hover:border-warm-sand transition-all">Saiba Mais</button>
+<span class="material-symbols-outlined text-warm-sand">auto_awesome</span>
+</div>
+</div>
+<!-- Peeling Hollywood -->
+<div class="bg-linen-white p-8 rounded-lg border border-[#E5E0D8] group hover:border-warm-sand transition-colors duration-500" style="transition: transform 0.3s ease-out, border-color 0.5s ease-out; transform: translateY(0px);">
+<h4 class="font-headline-md text-headline-md mb-3">Peeling Hollywood</h4>
+<p class="font-body-md text-taupe-mute mb-8">O segredo das celebridades: renovação celular imediata e brilho instantâneo sem downtime.</p>
+<div class="flex items-center justify-between">
+<button class="text-truffle-brown font-body-md border-b border-truffle-brown hover:border-warm-sand transition-all">Saiba Mais</button>
+<span class="material-symbols-outlined text-warm-sand">star</span>
+</div>
+</div>
+<!-- CO2 -->
+<div class="bg-linen-white p-8 rounded-lg border border-[#E5E0D8] group hover:border-warm-sand transition-colors duration-500" style="transition: transform 0.3s ease-out, border-color 0.5s ease-out; transform: translateY(0px);">
+<h4 class="font-headline-md text-headline-md mb-3">Laser CO2</h4>
+<p class="font-body-md text-taupe-mute mb-8">Tratamento fracionado potente para cicatrizes, manchas e rejuvenescimento estrutural profundo.</p>
+<div class="flex items-center justify-between">
+<button class="text-truffle-brown font-body-md border-b border-truffle-brown hover:border-warm-sand transition-all">Saiba Mais</button>
+<span class="material-symbols-outlined text-warm-sand">blur_on</span>
+</div>
+</div>
+<!-- Ultraformer -->
+<div class="bg-linen-white p-8 rounded-lg border border-[#E5E0D8] group hover:border-warm-sand transition-colors duration-500" style="transition: transform 0.3s ease-out, border-color 0.5s ease-out; transform: translateY(0px);">
+<h4 class="font-headline-md text-headline-md mb-3">Ultraformer III</h4>
+<p class="font-body-md text-taupe-mute mb-8">Ultrassom micro e macrofocado para ancoragem muscular e redução de gordura localizada.</p>
+<div class="flex items-center justify-between">
+<button class="text-truffle-brown font-body-md border-b border-truffle-brown hover:border-warm-sand transition-all">Saiba Mais</button>
+<span class="material-symbols-outlined text-warm-sand">bolt</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Category 2: Sobrancelhas (Bento-like Layout) -->
+<section class="bg-surface-container py-section-padding-sm md:py-section-padding-lg reveal-on-scroll visible">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="mb-12">
+<span class="font-label-caps text-label-caps text-warm-sand">CATEGORIA&nbsp;<br></span>
+<h3 class="font-headline-lg text-headline-lg mt-2">Sobrancelhas</h3>
+<p class="font-body-md text-taupe-mute mt-4 max-w-xl">Arquitetura do olhar através de métodos exclusivos e restauração de fios naturais.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Design & RSP -->
+<div class="md:col-span-2 bg-linen-white p-8 rounded-lg border border-[#E5E0D8]" style="transition: transform 0.3s ease-out, border-color 0.5s ease-out;">
+<div class="flex justify-between items-start mb-6">
+<h4 class="font-headline-md text-headline-md">Design &amp; Método RSP</h4>
+<span class="material-symbols-outlined text-warm-sand" style="font-variation-settings: &quot;FILL&quot; 1;">architecture</span>
+</div>
+<p class="font-body-md text-taupe-mute mb-8">Nosso método exclusivo RSP analisa a visagismo facial para criar o design perfeito, respeitando sua anatomia única.</p>
+<button class="bg-truffle-brown text-white font-body-md px-6 py-2 rounded-lg hover:opacity-90 active:scale-95 transition-all">Agendar Design</button>
+</div>
+<!-- Nanofios -->
+<div class="md:col-span-2 bg-truffle-brown p-8 rounded-lg text-white flex flex-col justify-between">
+<div>
+<h4 class="font-headline-md text-headline-md mb-4">Nanofios Realistas</h4>
+<p class="font-body-md opacity-80">A evolução da micropigmentação. Fios ultra finos e hiper-realistas que preenchem falhas com naturalidade absoluta.</p>
+</div>
+<div class="mt-8 flex items-center gap-4">
+<span class="material-symbols-outlined text-warm-sand">flare</span>
+<span class="font-label-caps uppercase tracking-widest text-warm-sand">Procedimento Premium</span>
+</div>
+</div>
+<!-- Other eyebrow services -->
+<div class="bg-linen-white p-6 rounded-lg border border-[#E5E0D8] flex flex-col justify-between h-full" style="transition: transform 0.3s ease-out, border-color 0.5s ease-out;">
+<h4 class="font-headline-md text-headline-md text-2xl mb-2">Reconstrução</h4>
+<p class="font-body-md text-taupe-mute text-sm mb-4">Protocolo para estimular o nascimento de novos fios.</p>
+<button class="text-truffle-brown font-bold text-sm hover:text-warm-sand transition-colors">SAIBA MAIS</button>
+</div>
+<div class="bg-linen-white p-6 rounded-lg border border-[#E5E0D8] flex flex-col justify-between h-full" style="transition: transform 0.3s ease-out, border-color 0.5s ease-out; transform: translateY(0px);">
+<h4 class="font-headline-md text-headline-md text-2xl mb-2">Laser</h4>
+<p class="font-body-md text-taupe-mute text-sm mb-4">Remoção segura de pigmentos antigos e indesejados.</p>
+<button class="text-truffle-brown font-bold text-sm hover:text-warm-sand transition-colors">SAIBA MAIS</button>
+</div>
+<div class="bg-linen-white p-6 rounded-lg border border-[#E5E0D8] flex flex-col justify-between h-full" style="transition: transform 0.3s ease-out, border-color 0.5s ease-out; transform: translateY(0px);">
+<h4 class="font-headline-md text-headline-md text-2xl mb-2">Reparo Tecidual</h4>
+<p class="font-body-md text-taupe-mute text-sm mb-4">Saúde da pele na região das sobrancelhas.</p>
+<button class="text-truffle-brown font-bold text-sm hover:text-warm-sand transition-colors">SAIBA MAIS</button>
+</div>
+<div class="bg-linen-white p-6 rounded-lg border border-[#E5E0D8] flex flex-col justify-between h-full" style="transition: transform 0.3s ease-out, border-color 0.5s ease-out;">
+<h4 class="font-headline-md text-headline-md text-2xl mb-2">Lamination</h4>
+<p class="font-body-md text-taupe-mute text-sm mb-4">Efeito volumoso e alinhamento moderno dos fios.</p>
+<button class="text-truffle-brown font-bold text-sm hover:text-warm-sand transition-colors">SAIBA MAIS</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Category 3: Lábios (Asymmetric Horizontal Layout) -->
+<section class="max-w-container-max mx-auto px-gutter py-section-padding-sm md:py-section-padding-lg reveal-on-scroll visible">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="w-full lg:w-1/3">
+<span class="font-label-caps text-label-caps text-warm-sand">CATEGORIA</span>
+<h3 class="font-headline-lg text-headline-lg mt-2 mb-6">Lábios</h3>
+<p class="font-body-lg text-taupe-mute">Harmonia, cor e hidratação profunda. Descubra como revitalizar seus lábios com sutileza.</p>
+<div class="mt-8 space-y-4">
+<div class="flex items-center gap-4 text-truffle-brown">
+<span class="material-symbols-outlined text-warm-sand">check_circle</span>
+<span class="font-body-md">Resultados Naturais</span>
+</div>
+<div class="flex items-center gap-4 text-truffle-brown">
+<span class="material-symbols-outlined text-warm-sand">check_circle</span>
+<span class="font-body-md">Conforto Durante o Procedimento</span>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-4 bg-surface-container-high flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close-up artistic portrait of a woman's perfectly hydrated and softly tinted pink lips. The lighting is soft and ethereal, emphasizing the smooth texture and natural gloss. The aesthetic is clean and luxurious, utilizing the clover cream and truffle brown palette of the brand. The focus is sharp on the lips with a gentle bokeh background, evoking a sense of specialized dermatological care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKBVr4EYmgbzbg6PCIBAj8ALTrIZiOMbAwhqhHs-ZLw-2QGT82Cd_4LEGpAu2HeTqeItq1UWWb-Qozrr5faocfny3EtkHwveC34QF4g9n4eyT9VaJVstkLpuz6MQAHmbIIkx3D8tNLTJiTJ3rFFvXFg2Of1hPdzPK0SoQAZV2Ftr-6BTsppYrc58iBYjeypg6x2PhM601Mv88Q0DylwDQDYz393jFgnxgirQ-mOuR2YQyAx9gt2aL3OGQaD3ZhMNbDy3FDAdrkGlzU">
+</div>
+<h4 class="font-headline-md text-headline-md">Hidragloss</h4>
+<p class="font-body-md text-taupe-mute">Hidratação ultra profunda com entrega de vitaminas.</p>
+</div>
+<div class="space-y-gutter">
+<div class="bg-linen-white p-8 rounded-lg border border-[#E5E0D8]" style="transition: transform 0.3s ease-out, border-color 0.5s ease-out;">
+<h4 class="font-headline-md text-headline-md mb-2">Nanolabial</h4>
+<p class="font-body-md text-taupe-mute mb-4">Pigmentação suave para definição e cor duradoura sem o efeito de batom pesado.</p>
+<button class="text-truffle-brown font-bold border-b border-warm-sand">AGENDAR</button>
+</div>
+<div class="bg-linen-white p-8 rounded-lg border border-[#E5E0D8]" style="transition: transform 0.3s ease-out, border-color 0.5s ease-out;">
+<h4 class="font-headline-md text-headline-md mb-2">SPA Labial</h4>
+<p class="font-body-md text-taupe-mute mb-4">Esfoliação e nutrição intensa para lábios ressecados e sem vitalidade.</p>
+<button class="text-truffle-brown font-bold border-b border-warm-sand">AGENDAR</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Category 4: Cílios e Avaliação (Clean Minimalist Cards) -->
+<section class="bg-clover-cream py-section-padding-sm md:py-section-padding-lg border-t border-warm-sand/20 reveal-on-scroll visible">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-warm-sand">CATEGORY 04</span>
+<h3 class="font-headline-lg text-headline-lg mt-2">Cílios &amp; Avaliação</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-4xl mx-auto">
+<div class="bg-linen-white p-10 rounded-lg border border-[#E5E0D8] text-center" style="transition: transform 0.3s ease-out, border-color 0.5s ease-out; transform: translateY(0px);">
+<span class="material-symbols-outlined text-4xl text-warm-sand mb-6">visibility</span>
+<h4 class="font-headline-md text-headline-md mb-4">Lash Lifting</h4>
+<p class="font-body-md text-taupe-mute mb-8">Curvatura e tingimento dos seus próprios cílios. Um olhar aberto e radiante sem a necessidade de extensões sintéticas.</p>
+<button class="w-full bg-warm-sand text-white font-body-md py-4 rounded-lg hover:bg-truffle-brown transition-colors duration-300">Descobrir Mais</button>
+</div>
+<div class="bg-white p-10 rounded-lg border-2 border-truffle-brown text-center flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-truffle-brown mb-6" style="font-variation-settings: &quot;FILL&quot; 1;">assignment_ind</span>
+<h4 class="font-headline-md text-headline-md mb-4">Avaliação Personalizada</h4>
+<p class="font-body-md text-taupe-mute mb-8">O primeiro passo para sua transformação. Uma consulta detalhada para entender suas necessidades e traçar um plano de tratamento exclusivo.</p>
+</div>
+<button class="w-full bg-truffle-brown text-white font-body-md py-4 rounded-lg hover:opacity-90 active:scale-95 transition-all">Começar Agora</button>
+</div>
+</div>
+</div>
+</section>
+<!-- CTAs / WhatsApp -->
+<div class="fixed bottom-8 right-8 z-40 group">
+<div class="absolute -top-12 right-0 bg-truffle-brown text-white px-4 py-2 rounded-full text-xs font-label-caps opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Fale Conosco</div>
+<button class="bg-truffle-brown text-white p-4 rounded-full shadow-[0_32px_64px_rgba(84,60,60,0.15)] hover:scale-110 active:scale-95 transition-all duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: &quot;FILL&quot; 1;">chat</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter py-section-padding-sm">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-12">
+<div class="md:col-span-2">
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown mb-4">Palomares Beauty</h2>
+<p class="font-body-md text-secondary max-w-sm">Elevando a autoestima através da saúde estética e do cuidado genuíno com cada detalhe da sua beleza.</p>
+</div>
+<div>
+<h5 class="font-label-caps text-truffle-brown mb-6">NAVEGAÇÃO</h5>
+<ul class="space-y-3">
+<li class=""><a class="font-body-md text-secondary hover:text-warm-sand transition-colors" href="#">Procedimentos</a></li>
+<li class=""><a class="font-body-md text-secondary hover:text-warm-sand transition-colors" href="#">Sobre Nós</a></li>
+<li class=""><a class="font-body-md text-secondary hover:text-warm-sand transition-colors" href="#">Localização</a></li>
+<li class=""><a class="font-body-md text-secondary hover:text-warm-sand transition-colors" href="#">Termos de Uso</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-caps text-truffle-brown mb-6">CONTATO</h5>
+<ul class="space-y-3">
+<li class=""><a class="font-body-md text-secondary hover:text-warm-sand transition-colors" href="#">Instagram</a></li>
+<li class=""><a class="font-body-md text-secondary hover:text-warm-sand transition-colors" href="#">WhatsApp</a></li>
+
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-secondary text-sm">© 2026 Palomares Beauty. Todos os direitos reservados.</p>
+<div class="flex gap-6">
+<a class="text-secondary hover:text-truffle-brown transition-all" href="#">Políticas de Privacidade</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple reveal animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Hover effect for cards to add subtle movement
+        document.querySelectorAll('.bg-linen-white').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+            card.style.transition = 'transform 0.3s ease-out, border-color 0.5s ease-out';
+        });
+    </script>
+
+
+
+
+
+
+
+
+</body></html>

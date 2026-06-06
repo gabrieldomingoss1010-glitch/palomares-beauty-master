@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sobre - Palomares Beauty</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&amp;family=Montserrat:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-secondary-fixed-variant": "#554336",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#4f4444",
+                    "carrara-gray": "#E5E5E5",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#2a1617",
+                    "secondary-fixed-dim": "#dbc2b0",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f5f3ee",
+                    "luxury-nude": "#CAB2A1",
+                    "surface-bright": "#fbf9f4",
+                    "surface-tint": "#725858",
+                    "on-surface": "#1b1c19",
+                    "surface": "#fbf9f4",
+                    "surface-variant": "#e4e2dd",
+                    "primary-fixed-dim": "#e1bebe",
+                    "secondary-container": "#f8decb",
+                    "on-primary-container": "#c8a7a6",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#832334",
+                    "on-secondary-fixed": "#26190e",
+                    "tertiary-fixed": "#ffdadb",
+                    "off-white": "#FDFCFB",
+                    "tertiary-container": "#7c1e2f",
+                    "tertiary": "#5d041b",
+                    "on-tertiary-fixed": "#40000f",
+                    "outline-variant": "#d3c3c2",
+                    "inverse-primary": "#e1bebe",
+                    "on-tertiary-container": "#ff8d98",
+                    "tertiary-fixed-dim": "#ffb2b8",
+                    "on-tertiary": "#ffffff",
+                    "primary": "#3c2627",
+                    "inverse-surface": "#30312e",
+                    "surface-container-highest": "#e4e2dd",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-background": "#1b1c19",
+                    "on-secondary-container": "#746152",
+                    "primary-fixed": "#fedad9",
+                    "on-error": "#ffffff",
+                    "deep-burgundy": "#591E27",
+                    "surface-dim": "#dbdad5",
+                    "secondary": "#6e5b4d",
+                    "surface-container": "#f0eee9",
+                    "outline": "#817474",
+                    "surface-container-high": "#eae8e3",
+                    "truffle-brown": "#543C3C",
+                    "on-primary-fixed-variant": "#594141",
+                    "secondary-fixed": "#f8decb",
+                    "champagne-gold": "#D4AF37",
+                    "background": "#fbf9f4",
+                    "primary-container": "#543c3c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "80px",
+                    "margin-mobile": "24px",
+                    "unit": "8px",
+                    "section-gap": "120px",
+                    "gutter": "32px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "body-md": ["Montserrat"],
+                    "label-caps": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "headline-lg": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "300"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "0.03em", "fontWeight": "400"}],
+                    "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(251, 249, 244, 0) 0%, rgba(251, 249, 244, 1) 100%);
+        }
+        .image-reveal {
+            overflow: hidden;
+        }
+        .image-reveal img {
+            transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        .image-reveal:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop py-6 max-w-[1440px] mx-auto bg-surface/80 backdrop-blur-md border-b border-carrara-gray/20 shadow-sm opacity-90">
+<div class="font-headline-md text-headline-md tracking-widest text-truffle-brown uppercase">
+            Palomares Beauty
+        </div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-truffle-brown transition-colors" href="#">Procedimentos</a>
+<a class="font-label-caps text-label-caps text-truffle-brown border-b border-champagne-gold pb-1" href="#">Clínica</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-truffle-brown transition-colors" href="#">Dermatologia</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-truffle-brown transition-colors" href="#">Tecnologia</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-truffle-brown transition-colors" href="#">Unidades</a>
+</div>
+<button class="bg-truffle-brown text-white font-label-caps text-label-caps px-8 py-3 hover:opacity-80 transition-all duration-300 active:scale-95">
+            AGENDAR CONSULTA
+        </button>
+</nav>
+<!-- Hero Section: Authority & Aesthetic -->
+<header class="relative w-full h-screen flex items-center justify-center overflow-hidden pt-20">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale-[20%] opacity-40" data-alt="A cinematic, high-end medical clinic interior with soft, ambient lighting illuminating polished marble floors and minimalist beige furniture. The scene is shot from a low angle to emphasize the grand architectural lines and the 'Quiet Luxury' aesthetic. The atmosphere is serene, clinical, and sophisticated, dominated by tones of truffle brown and luxury nude." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdwRgqBTJBc8dnx-H-hxw5BdM_lOmtk_q4J-wotxgK8i3T-25tjGaT70i2Q1gLzsL5e1_fz-I5WWscDUzPUGbJQZCzBTr4PqBpl3hVNB_fqHZg70NWVSbON8XQ6sbaiquxUmVYVSdBAelCppM5knOJdWsT0WXaxX_U2bigNc3yBr3-z52TI9nVi03Dpe-UCX2WpRVsvLxfuYNEYqPQNs_3AwacJkxFZoxpIrk9seKC3r5rjbjeIR_Bk-H-vYl4IQbUrRU_1701BY8-"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center max-w-4xl px-margin-mobile">
+<span class="font-label-caps text-label-caps text-luxury-nude block mb-6 tracking-[0.3em]">EXCELÊNCIA EM DERMATOLOGIA</span>
+<h1 class="font-display-lg text-display-lg text-truffle-brown mb-8">A Ciência por Trás da Beleza Atemporal</h1>
+<p class="font-body-lg text-body-lg text-on-secondary-container max-w-2xl mx-auto italic">
+                Onde o rigor médico encontra a sofisticação da estética de luxo para criar resultados que honram a sua essência.
+            </p>
+</div>
+</header>
+<!-- Section 1: História e Missão -->
+<section class="py-section-gap max-w-[1440px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="image-reveal aspect-[4/5] bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a female dermatologist in her late 30s with a warm but authoritative expression, wearing a tailored white coat and gold jewelry. She stands in a sun-drenched, minimalist medical office featuring wooden accents and fresh flowers. The lighting is soft and flattering, emphasizing a mood of trust, luxury, and professional care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD117XV-spglEvghXrCoQjcG2AIMGw9gCGsx1aex04OR1hARR-Z6C4i9mdCqCj52fhfU508U1LcKP124yvA105xK0_Dob3lao1pXl_fkF16RafayCrlVedM5-8x-oR3_5jVNtCt6AHCOMP33vwCh4odtjnCjRRbjNS1VF96stubwD1tEpspfRqfO5uagy7urObM7_UYGGCQsTxdFMnqn--sOEIlGlNn0Lb32FZfKs8evdGr3P7VEz4mzH-VKyBOjXqA4L9zy01vs8Ne"/>
+</div>
+<div class="md:pl-16">
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown mb-8">Nossa História</h2>
+<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
+<p>Fundada pela Dra. Helena Palomares, a clínica nasceu de uma visão singular: transformar a medicina estética em uma experiência de cuidado profundo, onde cada detalhe é milimetricamente planejado.</p>
+<p>Ao longo de uma década, construímos não apenas uma clínica, mas um refúgio de bem-estar e alta tecnologia em São Paulo. Nossa missão é oferecer o que há de mais avançado no mundo da dermatologia clínica e estética, mantendo sempre o toque humano e a personalização extrema.</p>
+<p>Acreditamos que a beleza real não se cria, ela se revela através da saúde da pele e do equilíbrio das formas.</p>
+</div>
+<div class="mt-12 flex items-center gap-4">
+<div class="w-12 h-[1px] bg-champagne-gold"></div>
+<span class="font-label-caps text-label-caps text-champagne-gold italic">Assinatura de Excelência</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Infraestrutura (Neo-Modernista Gallery) -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown mb-4">Um Espaço de Respiro</h2>
+<p class="font-body-md text-body-md text-on-secondary-container">Nossa infraestrutura foi desenhada para oferecer conforto térmico, acústico e visual. Cada sala é um santuário de tecnologia envolto em design neo-modernista.</p>
+</div>
+<button class="border border-champagne-gold text-truffle-brown font-label-caps text-label-caps px-8 py-4 hover:bg-champagne-gold/5 transition-colors">CONHEÇA NOSSAS UNIDADES</button>
+</div>
+<!-- Bento-style Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-12 grid-rows-2 gap-gutter h-auto md:h-[800px]">
+<div class="md:col-span-8 md:row-span-2 image-reveal bg-surface">
+<img class="w-full h-full object-cover" data-alt="Wide shot of a minimalist luxury medical clinic reception with a monolithic travertine marble desk and sculptural designer lighting. Large windows let in soft daylight, highlighting the clean lines and neutral color palette of beige, cream, and truffle brown. The space feels open, airy, and high-end, evoking a sense of calm and exclusivity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHEZNOCmJq0ehMGun4WjLKUvWNmcUqtIVFaZh0vQViLHSTh75QJ9Yr08SjiBhJwQji9dRY_9te8ariA1TV9eCm2l_oM3rrZQvB3QJLXdZyFy2lUE53WKB4VqsEsj5kosITNLfxv60HzW4n9q4BVWg8hrlqlXerIMM4hEOGK6Gf2QTVvTX7bPYQnf7smkRFbHf2JNyrZ_ltclnKSlimn7QxEDAlwNWRHECTLeuMckOUX7qQgYUndUJ-HaicK7cSfB4QJyf-gjYWi8JU"/>
+</div>
+<div class="md:col-span-4 md:row-span-1 image-reveal bg-surface">
+<img class="w-full h-full object-cover" data-alt="Close-up detail of a state-of-the-art treatment room featuring a high-tech white facial reclining chair and organized medical devices. The walls have a subtle linen texture, and the lighting is indirect and warm. The focus is on the precision and hygiene of the space, maintaining the clinical-chic luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAMSvp7nyTIsXTwhNuFf21XlwfKYlLnfYn9Yh3P8t65xoEeDBee4lLkHMu3H_C6CPSDPwyrGETnTQJjLNvWGb5xJt3_GFRWMNDLHicwqd9hBGlRe9gost0BLUODPVcw-fB38Ojeiiy-lpEvq8YG0kGd8h1GjOg_7D1-dec-Ub8vA3B6tklPgZ36MIRZPK-iTjhu-4RwAlTjSk5Zw8bFldYPcrOOiR7aVWh3MwtEv-5ODqeXwOkuUAlKRHk52f6BXQaIE_6J0eg8tmD"/>
+</div>
+<div class="md:col-span-4 md:row-span-1 image-reveal bg-surface">
+<img class="w-full h-full object-cover" data-alt="An artistic shot of a relaxation area within a medical spa, featuring a curved oak bench, a minimalist sculpture, and a soft shadow pattern from a nearby plant. The composition is asymmetrical and balanced, adhering to the 'The Breathable Grid' layout philosophy. Tones are light nude and soft gray." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSlhrsDvFeEjugqsIQQOQu6-azh0lrXTSyUn9m52U9BQgTd6bCY9wGq__EML-kfRCVe2LaAHPnXXuY25n5nCYO0AYGgaWgVJ15oen6N8wvKpbdba7oy7dwSrJ_zds7RxZmKJ1G7yMxBCllNKSIOS5I1voaJT6KjHJ-s7XO1zLXMwlf6eSVx8NUyvmLqOLjWU0usjziGRB-6PFVj3uXZG4Js5abIGZHUO28tO4MPzSl55QtsdtlF1JzK8yYSZWeEAZXUP_BiVzMcxRa"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Equipe Médica -->
+<section class="py-section-gap max-w-[1440px] mx-auto px-margin-desktop">
+<div class="text-center mb-24">
+<h2 class="font-headline-lg text-headline-lg text-truffle-brown">Corpo Clínico</h2>
+<div class="w-16 h-[2px] bg-champagne-gold mx-auto mt-6"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Doc 1 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden mb-8">
+<img class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0" data-alt="Portrait of a sophisticated male doctor in his 40s, dressed in a professional blazer over a white shirt, no tie. He stands against a soft-focus background of a modern clinic library. The lighting is soft and directional, highlighting his expertise and calm demeanor. High-end editorial photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbAc9zdRqRh-kzgMkHDmPNRLJbYDShU4M1Mv9UvHucrIua3A9kD9YE7zUSFRFpN4VwaNcN7tSoa1NZyjCKbjB4YrM59n3IqvRrpapYzA7LZkBLGYarr6mCkhxpIGj9z3KW7kuQqjwxPa9netbTD8xlnhljX-ECRjq8b3WdIBWOioCODxcGLTg_j0u6HFEAu88yC5YS1KALQoB4UwyLdrRAnorsVZVbEqxv9AxGdCo3-GB0xASJsFvA01a1_ESPRgKhTrFOqXwQJM-D"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-truffle-brown mb-2">Dr. André Lucca</h3>
+<span class="font-label-caps text-label-caps text-luxury-nude block mb-4">ESPECIALISTA EM TECNOLOGIAS</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Referência em laserterapia e rejuvenescimento facial não invasivo, com formação internacional em Harvard.</p>
+</div>
+<!-- Doc 2 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden mb-8">
+<img class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0" data-alt="Professional portrait of a female dermatologist with an elegant, minimalist style. She is looking directly at the camera with a confident and serene smile. The background is a clean, off-white wall with soft ambient shadows. The overall image quality is high-contrast and luxurious, resembling a profile in a premium fashion magazine." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHBlEfLo0_vjPiR9elimiDqCHVd-L-2m4hLdpuDli-sk3I0ixL9wTMpdu1_1MRk9fQOLoRpXq7MeJSoms4XUgkKQxrj408PVQnA9iAd7n1b8_vhBiIlTUCdNEcu92QTENoyCJYuKGG7rJuL5wa6E89fq3MRw_bdD_rM7hGV_pIt2qAN2TSrfZEoNv1KWf32OqmV7n9qXXrdPfJE6oAP9_EW3kKm_ratqnVTu5BI9g3ecmNUiTau-tdci2ecrdoUX_leUE22Q7aecXF"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-truffle-brown mb-2">Dra. Clara Mendes</h3>
+<span class="font-label-caps text-label-caps text-luxury-nude block mb-4">INJETÁVEIS E HARMONIZAÇÃO</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Especialista em bioestimuladores de colágeno, focada em resultados naturais e preservação da individualidade.</p>
+</div>
+<!-- Doc 3 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden mb-8">
+<img class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0" data-alt="Portrait of a medical specialist in a contemporary healthcare environment. The doctor has a kind, approachable presence and is dressed in professional clinical attire. The photography captures the 'Quiet Luxury' mood with soft, diffused light and a sophisticated color palette of warm beiges and deep browns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBONYcqQavZNI9n4tf12DLh-CSfMePkfzF_bZJgXyFFwqXP43zenZR4B50YX-ZOg8YTdlMbJy1huXMl4TmyD6xVxlzQGu_Q51cLtheaOrIbN5yxcSxEmiwvyU3ww_ObHz47KR9iVZp4bly0Rq_rNnzhfQPPMOGNvaKSflZ80QY14iFBPWlJ9iQPbSIoXujguCxKhIdujfeyynmI4YfhYeF8x-m1F5a5Rx0N_VSmSK2UGIJCgJYzn997VfPSPnSXCB2jgqCgiqzGk_7-"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-truffle-brown mb-2">Dr. Marcos Viana</h3>
+<span class="font-label-caps text-label-caps text-luxury-nude block mb-4">DERMATOLOGIA CLÍNICA</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Dedicado ao diagnóstico preciso e tratamento de patologias da pele, unindo ciência e cuidado humanizado.</p>
+</div>
+</div>
+</section>
+<!-- Section 4: Certificações e Tecnologia -->
+<section class="py-section-gap border-t border-carrara-gray/20">
+<div class="max-w-[1440px] mx-auto px-margin-desktop text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant opacity-50 block mb-12">PARCEIROS EM TECNOLOGIA E CIÊNCIA</span>
+<div class="flex flex-wrap justify-center items-center gap-16 opacity-60 grayscale hover:grayscale-0 transition-all">
+<!-- Placeholder for Brand Logos with high-end look -->
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md tracking-widest text-truffle-brown italic">Sculptra</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md tracking-widest text-truffle-brown font-bold">RADIESSE</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md tracking-widest text-truffle-brown">ULTRAFORMER</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md tracking-widest text-truffle-brown lowercase">botox</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md tracking-widest text-truffle-brown">RESTYLANE</span>
+</div>
+</div>
+<div class="mt-24 p-12 bg-off-white border border-carrara-gray/10 shadow-sm inline-block max-w-2xl">
+<h4 class="font-label-caps text-label-caps text-truffle-brown mb-4 tracking-[0.2em]">PROTOCOLOS CERTIFICADOS</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Utilizamos apenas produtos de procedência garantida e tecnologias aprovadas pela ANVISA e FDA, assegurando segurança absoluta em cada mililitro aplicado.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full px-margin-desktop py-section-gap grid grid-cols-1 md:grid-cols-4 gap-gutter bg-off-white border-t border-outline-variant">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-lg text-headline-lg text-truffle-brown mb-8">
+                Palomares Beauty
+            </div>
+<p class="font-body-md text-body-md text-on-secondary-container opacity-70 mb-8">
+                Sua beleza é nossa maior ciência. Experiência dermatológica de luxo no coração de São Paulo.
+            </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-truffle-brown cursor-pointer hover:text-champagne-gold transition-colors">brand_awareness</span>
+<span class="material-symbols-outlined text-truffle-brown cursor-pointer hover:text-champagne-gold transition-colors">share</span>
+<span class="material-symbols-outlined text-truffle-brown cursor-pointer hover:text-champagne-gold transition-colors">mail</span>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-label-caps text-truffle-brown mb-4">Navegação</h5>
+<a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Início</a>
+<a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Procedimentos</a>
+<a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">A Clínica</a>
+<a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Blog</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-label-caps text-truffle-brown mb-4">Institucional</h5>
+<a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Termos de Uso</a>
+<a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Privacidade</a>
+<a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Carreiras</a>
+<a class="font-body-md text-body-md text-on-secondary-container opacity-70 hover:text-champagne-gold transition-colors" href="#">Imprensa</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-label-caps text-truffle-brown mb-4">Contato</h5>
+<p class="font-body-md text-body-md text-on-secondary-container opacity-70">Av. Europa, 1200 - Jd. Europa<br/>São Paulo, SP</p>
+<p class="font-body-md text-body-md text-on-secondary-container opacity-70">+55 (11) 99999-0000</p>
+<p class="font-body-md text-body-md text-on-secondary-container opacity-70 underline decoration-champagne-gold">contato@palomaresbeauty.com</p>
+</div>
+<div class="col-span-1 md:col-span-4 mt-16 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-caps text-[10px] text-on-secondary-container opacity-70">
+                © 2024 Palomares Beauty. Todos os direitos reservados. Excelência Médica e Estética de Luxo.
+            </p>
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-[10px] text-on-secondary-container opacity-50">DESIGN BY LUXURY ATELIER</span>
+</div>
+</div>
+</footer>
+<script>
+        // Simple parallax or reveal effect on scroll
+        window.addEventListener('scroll', () => {
+            const reveals = document.querySelectorAll('.image-reveal');
+            reveals.forEach(reveal => {
+                const windowHeight = window.innerHeight;
+                const revealTop = reveal.getBoundingClientRect().top;
+                const revealPoint = 150;
+                
+                if (revealTop < windowHeight - revealPoint) {
+                    reveal.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body></html>

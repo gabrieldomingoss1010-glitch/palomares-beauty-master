@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  /* ===== EXISTING PRIVATE APP TOKENS ===== */
+  --color-rose: #cab2a1;
+  --color-wine: #543c3c;
+  --color-wine-dark: #3a2828;
+  --color-rose-light: #e8d8cd;
+  --color-cream: #faf6f3;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "DM Sans", sans-serif;
+
+  /* ===== SITE PALOMA PUBLIC DESIGN TOKENS ===== */
+  /* Colors */
+  --color-truffle-brown: #543C3C;
+  --color-warm-sand: #CAB2A1;
+  --color-luxury-nude: #CAB2A1;
+  --color-clover-cream: #FBF9F4;
+  --color-linen-white: #FFFFFF;
+  --color-taupe-mute: #8E7E73;
+  --color-champagne-gold: #D4AF37;
+  --color-off-white: #FDFCFB;
+  --color-carrara-gray: #E5E5E5;
+  --color-deep-burgundy: #591E27;
+
+  /* Site Paloma semantic colors */
+  --color-sp-surface: #fff8f7;
+  --color-sp-surface-container: #f4eceb;
+  --color-sp-surface-container-low: #f9f2f1;
+  --color-sp-surface-container-high: #eee6e6;
+  --color-sp-surface-container-highest: #e8e1e0;
+  --color-sp-surface-container-lowest: #ffffff;
+  --color-sp-outline-variant: #d3c3c2;
+  --color-sp-outline: #817474;
+  --color-sp-on-surface: #1e1b1b;
+  --color-sp-on-surface-variant: #4f4444;
+  --color-sp-secondary: #6e5b4d;
+  --color-sp-on-secondary-container: #746152;
+  --color-sp-primary-fixed-dim: #e1bebe;
+
+  /* Site Paloma Fonts */
+  --font-playfair: "Playfair Display", serif;
+  --font-manrope: "Manrope", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+@layer base {
+  :root {
+    /* ===== EXISTING PRIVATE APP CSS VARS ===== */
+    --rose: #cab2a1;
+    --wine: #543c3c;
+    --wine-dark: #3a2828;
+    --rose-light: #e8d8cd;
+    --cream: #faf6f3;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-cream);
+    color: var(--color-wine-dark);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-rose-light);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-rose);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-wine);
+  }
+
+  /* ===== SITE PALOMA PUBLIC AREA STYLES ===== */
+  /* Reset headings font inside public pages to use Playfair Display */
+  .public-area h1,
+  .public-area h2,
+  .public-area h3,
+  .public-area h4,
+  .public-area h5 {
+    font-family: var(--font-playfair);
+  }
+
+  .public-area {
+    font-family: var(--font-manrope);
+    background-color: var(--color-clover-cream);
+    color: var(--color-truffle-brown);
+  }
+
+  /* Material Symbols inside public area */
+  .public-area .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+  }
+
+  /* Reveal animation utility */
+  .sp-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+  }
+  .sp-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Hero gradient overlay */
+  .sp-hero-gradient {
+    background: linear-gradient(180deg, rgba(251,249,244,0) 0%, rgba(251,249,244,1) 100%);
+  }
+
+  /* Image reveal effect */
+  .sp-image-reveal {
+    overflow: hidden;
+  }
+  .sp-image-reveal img {
+    transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .sp-image-reveal:hover img {
+    transform: scale(1.05);
+  }
+
+  /* Luxury shadow */
+  .sp-luxury-shadow {
+    box-shadow: 0 40px 80px -20px rgba(84, 60, 60, 0.04);
+  }
+}

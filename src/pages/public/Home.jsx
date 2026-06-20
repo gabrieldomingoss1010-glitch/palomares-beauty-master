@@ -38,7 +38,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="bg-[#543C3C] text-white font-['Manrope'] font-bold px-8 py-4 rounded-lg hover:bg-opacity-85 active:scale-95 transition-all text-center"
               >
-                Agendar Consulta
+                Agendar Avaliação
               </a>
               <Link
                 to="/procedimentos"
@@ -149,7 +149,7 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-1/2 sp-reveal" style={{ transitionDelay: '200ms' }}>
               <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl text-[#543C3C] mb-6">Excelência & Dedicação</h2>
-              <h3 className="font-['Playfair_Display'] text-2xl text-[#CAB2A1] mb-6">Dra. Flavia Palomares</h3>
+              <h3 className="font-['Playfair_Display'] text-2xl text-[#CAB2A1] mb-6">Flavia Palomares</h3>
               <p className="font-['Manrope'] text-lg text-[#8E7E73] mb-8 leading-relaxed">
                 Com especialização internacional e um olhar voltado para a estética humanizada, Flavia Palomares fundou a clínica para ser um refúgio onde a técnica se encontra com a arte. Sua trajetória é marcada pela busca incessante por protocolos que respeitem a anatomia e a saúde da pele.
               </p>

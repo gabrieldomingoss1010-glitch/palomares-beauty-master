@@ -41,7 +41,7 @@ export default function Sobre() {
             <img
               className="w-full h-full object-cover"
               src={flaviaPalomares}
-              alt="Dra. Flavia Palomares"
+              alt="Flavia Palomares"
             />
           </div>
           <div className="md:pl-8 sp-reveal">

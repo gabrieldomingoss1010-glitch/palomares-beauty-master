@@ -150,7 +150,7 @@ export default function Resultados() {
             rel="noopener noreferrer"
             className="bg-[#543C3C] text-white font-['Manrope'] font-bold uppercase tracking-[0.12em] px-12 py-4 rounded-lg hover:bg-opacity-85 active:scale-95 transition-all shadow-lg"
           >
-            Agendar Consulta
+            Agendar Avaliação
           </a>
           <a
             href="https://wa.me/5565981501744"

@@ -74,7 +74,7 @@ function PublicHeader() {
             rel="noopener noreferrer"
             className="bg-[#543C3C] text-white font-['Manrope'] text-[11px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 rounded hover:bg-opacity-85 active:scale-95 transition-all"
           >
-            Agendar Consulta
+            Agendar Avaliação
           </a>
         </div>
 
@@ -118,7 +118,7 @@ function PublicHeader() {
             rel="noopener noreferrer"
             className="bg-[#543C3C] text-white font-['Manrope'] text-sm font-bold uppercase tracking-[0.15em] px-5 py-3 rounded text-center hover:bg-opacity-85 transition-all"
           >
-            Agendar Consulta
+            Agendar Avaliação
           </a>
         </div>
       )}

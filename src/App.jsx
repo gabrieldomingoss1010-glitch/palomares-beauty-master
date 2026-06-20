@@ -16,7 +16,6 @@ import Home from './pages/public/Home';
 import Sobre from './pages/public/Sobre';
 import Procedimentos from './pages/public/Procedimentos';
 import Resultados from './pages/public/Resultados';
-import Treinamentos from './pages/public/Treinamentos';
 import Contato from './pages/public/Contato';
 
 // ===== PRIVATE APP LAYOUT (unchanged) =====
@@ -47,7 +46,6 @@ function App() {
             <Route path="/sobre" element={<PublicLayout><Sobre /></PublicLayout>} />
             <Route path="/procedimentos" element={<PublicLayout><Procedimentos /></PublicLayout>} />
             <Route path="/resultados" element={<PublicLayout><Resultados /></PublicLayout>} />
-            <Route path="/treinamentos" element={<PublicLayout><Treinamentos /></PublicLayout>} />
             <Route path="/contato" element={<PublicLayout><Contato /></PublicLayout>} />
 
             {/* ===== PRIVATE APP ROUTES (unchanged) ===== */}

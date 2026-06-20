@@ -145,8 +145,8 @@ export default function Login() {
                 <Lock size={12} />
                 <span>Conexão segura</span>
               </div>
-              <Link to="/treinamentos" className="login-back-to-public">
-                Conheça nossos treinamentos
+              <Link to="/" className="login-back-to-public">
+                Voltar ao início
               </Link>
             </div>
           </div>

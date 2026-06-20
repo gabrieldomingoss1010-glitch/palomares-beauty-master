@@ -22,7 +22,6 @@ function PublicHeader() {
     { to: '/sobre', label: 'Sobre' },
     { to: '/procedimentos', label: 'Procedimentos' },
     { to: '/resultados', label: 'Resultados' },
-    { to: '/treinamentos', label: 'Treinamentos' },
     { to: '/contato', label: 'Contato' },
   ];
 
@@ -153,7 +152,6 @@ function PublicFooter() {
                 { to: '/sobre', label: 'A Clínica' },
                 { to: '/procedimentos', label: 'Procedimentos' },
                 { to: '/resultados', label: 'Resultados' },
-                { to: '/treinamentos', label: 'Treinamentos' },
                 { to: '/contato', label: 'Contato' },
               ].map(({ to, label }) => (
                 <li key={to}>
@@ -186,7 +184,7 @@ function PublicFooter() {
               ))}
               <li>
                 <a
-                  href="https://www.google.com/maps/place/Cl%C3%ADnica+Palomares+Beauty"
+                  href="https://maps.app.goo.gl/cmkgGzGGt9WsTxBT9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-['Manrope'] text-sm text-[#8E7E73] hover:text-[#CAB2A1] transition-colors"
@@ -204,7 +202,7 @@ function PublicFooter() {
             </h4>
             <ul className="space-y-3">
               {[
-                { href: 'https://instagram.com', label: 'Instagram' },
+                { href: 'https://www.instagram.com/clinicapalomaresbeauty/', label: 'Instagram' },
                 { href: 'https://wa.me/5565981501744', label: 'WhatsApp' },
               ].map(({ href, label }) => (
                 <li key={label}>
@@ -257,6 +255,13 @@ function PublicFooter() {
 }
 
 export default function PublicLayout({ children }) {
+  const location = useLocation();
+
+  // Scroll to top on navigation
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   // Scroll reveal effect for .sp-reveal elements
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -270,10 +275,16 @@ export default function PublicLayout({ children }) {
       { threshold: 0.1 }
     );
 
-    const els = document.querySelectorAll('.sp-reveal');
-    els.forEach((el) => observer.observe(el));
-    return () => els.forEach((el) => observer.unobserve(el));
-  }, []);
+    const timeout = setTimeout(() => {
+      const els = document.querySelectorAll('.sp-reveal');
+      els.forEach((el) => observer.observe(el));
+    }, 100);
+
+    return () => {
+      clearTimeout(timeout);
+      observer.disconnect();
+    };
+  }, [location.pathname]);
 
   return (
     <div className="public-area min-h-screen flex flex-col">

@@ -88,7 +88,7 @@ export default function Contato() {
                 <option>Lash Lifting</option>
                 <option>Tratamento de Pele</option>
                 <option>Avaliação Personalizada</option>
-                <option>Treinamentos & Cursos</option>
+
                 <option>Outros</option>
               </select>
             </div>
@@ -144,8 +144,8 @@ export default function Contato() {
             </span>
             <div className="space-y-3">
               {[
-                { day: 'Segunda — Sexta', hours: '08:00 — 20:00' },
-                { day: 'Sábados', hours: '09:00 — 14:00' },
+                { day: 'Segunda — Sexta', hours: '09:00 — 19:00' },
+                { day: 'Sábados', hours: '09:00 — 13:00' },
                 { day: 'Domingos e Feriados', hours: 'Fechado' },
               ].map(({ day, hours }) => (
                 <div key={day} className="flex justify-between border-b border-[#d3c3c2]/40 pb-2">
@@ -165,7 +165,7 @@ export default function Contato() {
               Cuiabá, Mato Grosso
             </p>
             <a
-              href="https://www.google.com/maps/place/Cl%C3%ADnica+Palomares+Beauty"
+              href="https://maps.app.goo.gl/cmkgGzGGt9WsTxBT9"
               target="_blank"
               rel="noopener noreferrer"
               className="font-['Manrope'] text-[11px] font-bold uppercase tracking-[0.1em] text-[#CAB2A1] hover:text-[#543C3C] transition-colors flex items-center gap-1"

@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import flaviaPalomares from '../../assets/flavia_palomares.jpg';
+import espaco1 from '../../assets/espaco_1.jpg';
+import espaco2 from '../../assets/espaco_2.jpg';
 
 export default function Sobre() {
   useEffect(() => {
@@ -46,7 +48,7 @@ export default function Sobre() {
             <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl text-[#543C3C] mb-8">Nossa História</h2>
             <div className="space-y-5 font-['Manrope'] text-lg text-[#8E7E73] leading-relaxed">
               <p>
-                Fundada pela Dra. Flavia Palomares, a clínica nasceu de uma visão singular: transformar a estética em uma experiência de cuidado profundo, onde cada detalhe é milimetricamente planejado.
+                Fundada pela Flavia Palomares, a clínica nasceu de uma visão singular: transformar a estética em uma experiência de cuidado profundo, onde cada detalhe é milimetricamente planejado.
               </p>
               <p>
                 Na Palomares Beauty, acreditamos que a estética vai muito além dos procedimentos. Nosso propósito é proporcionar uma experiência de cuidado, acolhimento e reconexão, onde cada mulher se sinta valorizada, compreendida e única.
@@ -80,14 +82,14 @@ export default function Sobre() {
             <div className="sp-image-reveal h-80 md:h-[500px] bg-[#f4eceb] rounded-lg overflow-hidden">
               <img
                 className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHEZNOCmJq0ehMGun4WjLKUvWNmcUqtIVFaZh0vQViLHSTh75QJ9Yr08SjiBhJwQji9dRY_9te8ariA1TV9eCm2l_oM3rrZQvB3QJLXdZyFy2lUE53WKB4VqsEsj5kosITNLfxv60HzW4n9q4BVWg8hrlqlXerIMM4hEOGK6Gf2QTVvTX7bPYQnf7smkRFbHf2JNyrZ_ltclnKSlimn7QxEDAlwNWRHECTLeuMckOUX7qQgYUndUJ-HaicK7cSfB4QJyf-gjYWi8JU"
+                src={espaco1}
                 alt="Recepção da clínica"
               />
             </div>
             <div className="sp-image-reveal h-80 md:h-[500px] bg-[#f4eceb] rounded-lg overflow-hidden">
               <img
                 className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAMSvp7nyTIsXTwhNuFf21XlwfKYlLnfYn9Yh3P8t65xoEeDBee4lLkHMu3H_C6CPSDPwyrGETnTQJjLNvWGb5xJt3_GFRWMNDLHicwqd9hBGlRe9gost0BLUODPVcw-fB38Ojeiiy-lpEvq8YG0kGd8h1GjOg_7D1-dec-Ub8vA3B6tklPgZ36MIRZPK-iTjhu-4RwAlTjSk5Zw8bFldYPcrOOiR7aVWh3MwtEv-5ODqeXwOkuUAlKRHk52f6BXQaIE_6J0eg8tmD"
+                src={espaco2}
                 alt="Sala de procedimentos"
               />
             </div>
@@ -95,30 +97,7 @@ export default function Sobre() {
         </div>
       </section>
 
-      {/* ===== CERTIFICAÇÕES ===== */}
-      <section className="py-24 border-t border-[#d3c3c2]/30">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-10 text-center">
-          <span className="font-['Manrope'] text-[11px] font-bold uppercase tracking-[0.2em] text-[#8E7E73] opacity-60 block mb-12">
-            Parceiros em Tecnologia e Ciência
-          </span>
-          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-60">
-            {['Sculptra', 'RADIESSE', 'ULTRAFORMER', 'botox', 'RESTYLANE'].map((brand) => (
-              <div key={brand} className="font-['Playfair_Display'] text-2xl font-semibold text-[#543C3C] italic">
-                {brand}
-              </div>
-            ))}
-          </div>
 
-          <div className="mt-20 p-10 bg-[#f9f2f1] border border-[#d3c3c2]/20 inline-block max-w-2xl rounded-lg sp-reveal">
-            <h4 className="font-['Manrope'] font-bold text-[11px] uppercase tracking-[0.2em] text-[#543C3C] mb-4">
-              Protocolos Certificados
-            </h4>
-            <p className="font-['Manrope'] text-[#8E7E73] leading-relaxed">
-              Utilizamos apenas produtos de procedência garantida e tecnologias aprovadas pela ANVISA e FDA, assegurando segurança absoluta em cada procedimento realizado.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* ===== CTA ===== */}
       <section className="bg-[#543C3C] py-20 text-center">

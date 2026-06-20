@@ -135,54 +135,6 @@ export default function Resultados() {
         </div>
       </section>
 
-      {/* ===== CONTEXTO CIENTÍFICO ===== */}
-      <section className="bg-[#f9f2f1] py-24 border-y border-[#d3c3c2]/30">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="sp-reveal">
-              <span className="font-['Manrope'] text-[11px] font-bold uppercase tracking-[0.15em] text-[#CAB2A1] mb-6 block">
-                Por Trás dos Resultados
-              </span>
-              <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl text-[#543C3C] mb-8">
-                Protocolos Baseados em<br />Evidência Científica.
-              </h2>
-              <p className="font-['Manrope'] text-lg text-[#8E7E73] mb-12 leading-relaxed">
-                Não entregamos apenas estética; entregamos saúde tecidual. Nossas escolhas tecnológicas são pautadas nos maiores congressos mundiais de dermatologia.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {[
-                  { icon: 'biotech', titulo: 'Análise 3D VISIA', desc: 'Mapeamento profundo de manchas, rugas e texturas antes de iniciar qualquer protocolo.' },
-                  { icon: 'verified_user', titulo: 'Segurança Clínica', desc: 'Produtos de marcas líderes mundiais com rastreabilidade total.' },
-                ].map(({ icon, titulo, desc }) => (
-                  <div key={titulo} className="bg-white p-6 border-t-2 border-[#CAB2A1] shadow-sm rounded-lg">
-                    <span className="material-symbols-outlined text-[#CAB2A1] mb-4 block">{icon}</span>
-                    <h4 className="font-['Manrope'] font-bold text-[11px] uppercase tracking-[0.12em] text-[#543C3C] mb-2">{titulo}</h4>
-                    <p className="font-['Manrope'] text-xs text-[#8E7E73] leading-relaxed">{desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="relative mt-12 md:mt-0 sp-reveal">
-              <div className="aspect-square bg-[#f4eceb] overflow-hidden rounded-lg">
-                <img
-                  className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt-nziBW2UkJbIptEdAU_Xlo_Z_LjG44pGRf_3YGC9lQ-JJAkdWliruV6V1MTqz7wWR2UfwR4gbdJliLfwMzAWjbA8p7qcPtG50ElA8uy_scy61vP-VO58q6aMX0Tq30Wre2VorX95lKl1gcZaYayegqMzgVlxlonY7Rxu7bSbF1eTLnlK6js_DWSWq5zFaUnP3ZnmH8rWERmzWP1CAy4BW-VuqrSMisafKszMAju_N84eK6BI2FxCXrrM_ya3wWO0lMmEnXkbFqHu"
-                  alt="Equipamento dermatológico"
-                />
-              </div>
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl max-w-xs border border-[#d3c3c2]/20 rounded-lg">
-                <p className="font-['Manrope'] text-sm italic text-[#543C3C]">
-                  "A beleza é o resultado da harmonia entre a técnica médica e o olhar artístico."
-                </p>
-                <p className="font-['Manrope'] text-[10px] font-bold uppercase tracking-[0.15em] text-[#CAB2A1] mt-3">
-                  — Dra. Palomares
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ===== CTA FINAL ===== */}
       <section className="max-w-[1280px] mx-auto px-6 md:px-10 py-24 text-center sp-reveal">
         <h2 className="font-['Playfair_Display'] text-4xl md:text-6xl text-[#543C3C] mb-8">

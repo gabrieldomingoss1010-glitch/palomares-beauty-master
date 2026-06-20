@@ -1,12 +1,15 @@
-import { createContext, useState, useEffect, useCallback } from 'react';
+import { createContext, useState, useEffect, useCallback, useRef } from 'react';
 import { api } from '../services/api';
 
 export const FilesContext = createContext();
+
+const POLL_INTERVAL = 30000; // atualiza a cada 30 segundos
 
 export function FilesProvider({ children }) {
   const [files, setFiles] = useState([]);
   const [stats, setStats] = useState({ total: 0, pdfs: 0, videos: 0, storage: '0 B', storagePercentage: 0 });
   const [loading, setLoading] = useState(true);
+  const pollingRef = useRef(null);
 
   const fetchFiles = useCallback(async () => {
     try {
@@ -30,9 +33,30 @@ export function FilesProvider({ children }) {
     await Promise.all([fetchFiles(), fetchStats()]);
   }, [fetchFiles, fetchStats]);
 
+  // Carregamento inicial
   useEffect(() => {
     setLoading(true);
     refresh().finally(() => setLoading(false));
+  }, [refresh]);
+
+  // Polling automático a cada 30 segundos
+  useEffect(() => {
+    pollingRef.current = setInterval(() => {
+      refresh();
+    }, POLL_INTERVAL);
+
+    return () => clearInterval(pollingRef.current);
+  }, [refresh]);
+
+  // Refresh ao voltar para a aba (ex: usuário estava em outra aba)
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        refresh();
+      }
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
   }, [refresh]);
 
   const addFile = async (file, coverFile, displayName, description, onProgress) => {

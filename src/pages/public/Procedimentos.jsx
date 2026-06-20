@@ -7,7 +7,7 @@ const PROCEDIMENTOS = [
     icon: 'face',
     desc: 'Cuidados avançados para uma derme saudável, luminosa e rejuvenescida através de tecnologias de ponta.',
     items: [
-      { nome: 'Epilação Buço', desc: 'Remoção delicada e duradoura para uma região suave e livre de imperfeições.', icon: 'face' },
+      { nome: 'Depilação de Buço', desc: 'Remoção delicada e duradoura para uma região suave e livre de imperfeições.', icon: 'face' },
       { nome: 'Limpeza de Pele', desc: 'Protocolo profundo de higienização e extração, devolvendo o viço e a saúde aos poros.', icon: 'water_drop' },
       { nome: 'Lifting Facial', desc: 'Técnicas manuais e tecnológicas para reposicionamento tecidual e contorno definido.', icon: 'auto_awesome' },
       { nome: 'Peeling Hollywood', desc: 'O segredo das celebridades: renovação celular imediata e brilho instantâneo sem downtime.', icon: 'star' },

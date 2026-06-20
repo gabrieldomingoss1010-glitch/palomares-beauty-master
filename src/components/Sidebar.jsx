@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, Upload, Library, FileText, Video, X } from 'lucide-react';
+import { LayoutDashboard, Upload, Library, FileText, Video, X, Users } from 'lucide-react';
 import { useContext } from 'react';
 import { FilesContext } from '../context/FilesContext';
 
@@ -10,6 +10,7 @@ export default function Sidebar({ isOpen, onClose }) {
     { path: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
     { path: '/upload', icon: Upload, label: 'Upload' },
     { path: '/library', icon: Library, label: 'Biblioteca' },
+    { path: '/users', icon: Users, label: 'Usuários' },
   ];
 
   return (

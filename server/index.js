@@ -289,6 +289,65 @@ app.get('/api/stats', authenticateToken, (req, res) => {
   });
 });
 
+// ─── USER ROUTES (protected) ──────────────────────────
+
+// GET /api/users — list all users
+app.get('/api/users', authenticateToken, (req, res) => {
+  const users = queryAll('SELECT id, username, createdAt FROM users ORDER BY createdAt DESC');
+  res.json(users);
+});
+
+// POST /api/users — create a new user
+app.post('/api/users', authenticateToken, async (req, res) => {
+  const { username, password } = req.body;
+
+  if (!username || !password) {
+    return res.status(400).json({ error: 'Usuário e senha são obrigatórios' });
+  }
+
+  // Check if username already exists
+  const existingUser = queryOne('SELECT * FROM users WHERE username = ?', [username]);
+  if (existingUser) {
+    return res.status(400).json({ error: 'Este nome de usuário já está em uso' });
+  }
+
+  try {
+    const hashedPassword = await bcrypt.hash(password, 10);
+    const db = getDb();
+    db.run('INSERT INTO users (username, password) VALUES (?, ?)', [username, hashedPassword]);
+    saveDb();
+
+    const newUser = queryOne('SELECT id, username, createdAt FROM users WHERE username = ?', [username]);
+    res.status(201).json(newUser);
+  } catch (err) {
+    res.status(500).json({ error: 'Erro ao criar usuário' });
+  }
+});
+
+// DELETE /api/users/:id — delete a user
+app.delete('/api/users/:id', authenticateToken, (req, res) => {
+  const userIdToDelete = Number(req.params.id);
+
+  // Prevent self-deletion
+  if (req.user && req.user.id === userIdToDelete) {
+    return res.status(400).json({ error: 'Você não pode excluir o seu próprio usuário enquanto está conectado' });
+  }
+
+  const user = queryOne('SELECT * FROM users WHERE id = ?', [userIdToDelete]);
+  if (!user) {
+    return res.status(404).json({ error: 'Usuário não encontrado' });
+  }
+
+  // Prevent deleting the last remaining user
+  const totalUsers = queryOne('SELECT COUNT(*) as count FROM users');
+  if (totalUsers && totalUsers.count <= 1) {
+    return res.status(400).json({ error: 'Não é possível excluir o único usuário do sistema' });
+  }
+
+  runSql('DELETE FROM users WHERE id = ?', [userIdToDelete]);
+  res.json({ message: 'Usuário excluído com sucesso' });
+});
+
 // Error handler for multer
 app.use((err, req, res, next) => {
   if (err instanceof multer.MulterError) {

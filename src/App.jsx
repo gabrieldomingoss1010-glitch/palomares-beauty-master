@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard';
 import Upload from './pages/Upload';
 import Library from './pages/Library';
 import Login from './pages/Login';
+import Users from './pages/Users';
 
 // ===== PUBLIC SITE PALOMA IMPORTS =====
 import PublicLayout from './components/public/PublicLayout';
@@ -64,6 +65,11 @@ function App() {
             <Route path="/library" element={
               <ProtectedRoute>
                 <Layout><Library /></Layout>
+              </ProtectedRoute>
+            } />
+            <Route path="/users" element={
+              <ProtectedRoute>
+                <Layout><Users /></Layout>
               </ProtectedRoute>
             } />
 

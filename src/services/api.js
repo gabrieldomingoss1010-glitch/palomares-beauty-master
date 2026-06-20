@@ -91,6 +91,38 @@ export const api = {
     return res.json();
   },
 
+  async getUsers() {
+    const res = await fetch(`${API_BASE}/users`, {
+      headers: getAuthHeaders()
+    });
+    if (!res.ok) throw new Error('Falha ao buscar usuários');
+    return res.json();
+  },
+
+  async createUser(username, password) {
+    const res = await fetch(`${API_BASE}/users`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        ...getAuthHeaders()
+      },
+      body: JSON.stringify({ username, password })
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Falha ao criar usuário');
+    return data;
+  },
+
+  async deleteUser(id) {
+    const res = await fetch(`${API_BASE}/users/${id}`, {
+      method: 'DELETE',
+      headers: getAuthHeaders()
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Falha ao deletar usuário');
+    return data;
+  },
+
   getFileUrl(filePath) {
     return `/${filePath}`;
   }

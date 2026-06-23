@@ -60,7 +60,7 @@ function CTAPrivado({ variant = 'primary' }) {
         className="border-2 border-[#CAB2A1] text-[#543C3C] font-['Manrope'] font-bold uppercase tracking-[0.12em] px-8 py-3 rounded-lg hover:bg-[#CAB2A1] hover:text-white active:scale-95 transition-all flex items-center gap-2 justify-center"
       >
         <span className="material-symbols-outlined text-base">school</span>
-        {user ? 'Acessar Meus Cursos' : 'Entrar na Área do Aluno'}
+        {user ? 'Acessar Meus Cursos' : 'Entrar na Área do Colaborador'}
       </button>
     );
   }

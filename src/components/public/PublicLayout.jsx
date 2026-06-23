@@ -66,7 +66,7 @@ function PublicHeader() {
             to="/login"
             className="font-['Manrope'] text-[11px] font-bold uppercase tracking-[0.12em] text-[#8E7E73] hover:text-[#543C3C] transition-colors"
           >
-            Área do Aluno
+            Área do Colaborador
           </Link>
           <a
             href="https://wa.me/5565981501744"
@@ -110,7 +110,7 @@ function PublicHeader() {
             to="/login"
             className="font-['Manrope'] text-sm font-bold uppercase tracking-[0.12em] text-[#8E7E73]"
           >
-            Área do Aluno
+            Área do Colaborador
           </Link>
           <a
             href="https://wa.me/5565981501744"

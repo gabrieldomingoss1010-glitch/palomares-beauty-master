@@ -144,9 +144,9 @@ export default function Contato() {
             </span>
             <div className="space-y-3">
               {[
-                { day: 'Segunda — Sexta', hours: '09:00 — 19:00' },
+                { day: 'Terça — Sexta', hours: '09:00 — 18:00' },
                 { day: 'Sábados', hours: '09:00 — 13:00' },
-                { day: 'Domingos e Feriados', hours: 'Fechado' },
+                { day: 'Segunda, Domingos e Feriados', hours: 'Fechado' },
               ].map(({ day, hours }) => (
                 <div key={day} className="flex justify-between border-b border-[#d3c3c2]/40 pb-2">
                   <span className="font-['Manrope'] text-sm text-[#8E7E73]">{day}</span>
